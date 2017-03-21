@@ -1,0 +1,855 @@
+n. 演讲;训斥，教训;
+vi. 作演讲;
+vt. 给…作演讲;教训（通常是长篇大论的）;
+
+[ˈlektʃə(r)]
+
+
+
+illegible
+
+adj. 难辨认的，字迹模糊的;潦草;
+
+[ɪˈledʒəbl]
+
+1630s, from assimilated form of in- (1) "not, opposite of" + legible. Related: Illegibly; illegibility.
+
+legibility
+
+n. 易读性，易辨认，易理解;清晰度;
+
+[ˌledʒə'bɪlətɪ]
+
+1670s; see legible + -ity.
+
+legible
+
+adj. 易读的;
+
+[ˈledʒəbl]
+
+late 14c., from Late Latin legibilis "that can be read, written plainly," from Latin legere "to read" (see lecture (n.)). Related: Legibly.
+
+lesson
+
+n. 教训，训诫;功课;课程，一堂课;[宗]日课;
+vt. 教训，训斥;教课;向…授课;
+
+[ˈlesn]
+
+early 13c., "a reading aloud from the Bible," also "something to be learned by a student," from Old French leçon, from Latin lectionem (nominative lectio) "a reading," noun of action from past participle stem of legere "to read" (see lecture (n.)). Transferred sense of "an occurrence from which something can be learned" is from 1580s.
+
+lectern
+
+n. （教堂中的）读经台;（演说时放讲稿的）小讲台;
+
+[ˈlektən]
+
+early 14c., lettorne, lettron, "reading-desk in a church," from Old French letron, from Medieval Latin lectrinum, from Late Latin lectrum "lectern," from root of Latin legere "to read," literally "to gather, choose" (see lecture (n.)). Half-re-Latinized in English in 15c. For form, OED compares mulctrum "milking-pail" from mulgere "to milk."
+
+legume
+
+n. 豆科植物，豆类蔬菜;
+
+[ˈlegju:m]
+
+plant of the group of the pulse family, pea, 1670s, from French légume (16c.), from Latin legumen "pulse, leguminous plant," of unknown origin. One suggestion ties it to Latin legere "to gather" (see lecture (n.)), because they can be scooped by the handful. Middle English had the word in the Latin form legumen (late 14c.).
+
+lection
+
+n. 经文（礼拜时选读的）;
+
+['lekʃən]
+
+1530s, "a reading," from Old French lection, from Latin lectionem (nominative lectio) "a reading," noun of action from past participle stem of legere "to read" (see lecture (n.)). Meaning "a sacred writing to be read in a church" is from c. 1600; sense of "a particular reading of a text from a certain copy or edition" is from 1650s. Related: Lectionary (adj.).
+
+lector
+
+n. （教堂礼拜时的）读经者，讲师;
+
+[ˈlektɔ:(r)]
+
+late 14c., "reader, a cleric in one of the minor orders appointed to read holy works to the people," from Late Latin lector "reader," agent noun from Latin legere "to read" (see lecture (n.)). Fem. forms were lectrice (1889, from French), lectress (1846). Related: Lectorship. Middle English also had lectory "a house for reading" (early 15c.).
+
+lexical
+
+adj. 词汇的;具词典性质的，词典的;
+
+[ˈleksɪkl]
+
+"relating to the vocabulary of a language," 1833, from a Latinized form of Greek lexikos "pertaining to words" (see lexicon) + -al (1). Related: Lexically.
+
+lexicon
+
+n. 词典;专门词汇;
+
+[ˈleksɪkən]
+
+c. 1600, "a dictionary, a word-book," from Middle French lexicon or directly from Modern Latin lexicon, from Greek lexikon (biblion) "word (book)," from neuter of lexikos "pertaining to words," from lexis "a word, a phrase; reason; way of speech, diction, style," from legein "to say" (see lecture (n.)).
+
+Especially of dictionaries of Greek, Syriac, Hebrew, or Arabic, because these typically were written in Latin, and in Modern Latin lexicon (not dictionarius) was the preferred name for a word-book. The modern sense of "vocabulary proper to some sphere of activity" (1640s) is a figurative extension.
+
+legendary
+
+adj. 传说的;传奇的;极其著名的;
+n. 传说集;[宗]圣徒传;
+
+[ˈledʒəndri]
+
+mid-16c., from Medieval Latin legendarius "pertaining to legends," from legenda (see legend). Earlier in English it was a noun meaning "a collection of legends" (1510s).
+
+legend
+
+n. 传说;传奇人物;铭文;图例;
+
+[ˈledʒənd]
+
+early 14c., "narrative dealing with a happening or an event," from Old French legende (12c., Modern French légende) and directly from Medieval Latin legenda "legend, story," especially lives of saints, which were formerly read at matins and in refectories of religious houses, literally "(things) to be read," on certain days in church, etc., from Latin legendus, neuter plural gerundive of legere "to read; to gather, pluck, select" (see lecture (n.)).
+
+Extended sense of "nonhistorical or mythical story," with or without saints, wonders, and miracles is first recorded late 14c. Meaning "writing or inscription" (especially on a coin or medal) is from 1610s; on a map, illustration, etc., from 1903. To be a legend in (one's) own time is from 1958.
+
+legion
+
+n. 大批部队;众多，大量;古罗马军团;
+adj. 众多的;大量的;
+
+[ˈli:dʒən]
+
+c. 1200, "a Roman legion," from Old French legion "squad, band, company, Roman legion" 
+ from Latin legionem (nominative legio) "Roman legion, body of soldiers, a levy of troops," from legere "to gather; to choose, pick out, select" (also "to read;" see lecture (n.)). Tucker writes that "The common sense is 'pick,'" but it is unclear whether the use here is "picking up or picking out." Roughly 3,000 to 6,000 men, under Marius usually with attached cavalry. "The legions were numbered in the order of their levy, but were often known by particular names" [Lewis].
+
+The great power of the Roman legion was due to its rigid discipline and its tactical formation in battle, which was so open and flexible as to enable it to meet every emergency without surprise or derangement.
+
+Generalized sense of "a large number of persons" (c. 1300) is due to translations of the allusive phrase in Mark v.9. Of modern military bodies from 1590s. American Legion, U.S. association of ex-servicemen, founded in 1919. Legion of Honor is French légion d'honneur, an order of distinction founded by Napoleon in 1802. Foreign Legion is French légion étrangère "body of foreign volunteers in a modern army," originally Polish, Belgian, etc. units in French army; they traditionally served in colonies or distant expeditions. Related: Legionary.
+
+eclectic
+
+adj. 折衷的;选择的;
+n. 折中主义者;
+
+[ɪˈklektɪk]
+
+1680s, "not confined to or following any one model or system," originally in reference to ancient philosophers who selected doctrines from every system; from French eclectique (1650s), from Greek eklektikos "selective," literally "picking out," from eklektos "selected," from eklegein "pick out, select," from ek "out" (see ex-) + legein "gather, choose" (see lecture (n.)). Broader sense of "borrowed from diverse sources" is first recorded 1847. As a noun from 1817.
+
+collectible
+
+adj. 可收集的，可代收的;适于收藏的;
+n. 适宜收藏的东西，业余爱好的收藏物;传统收集之物（如：邮票，辅币，艺术品等）;非传统收藏品[亦作collectable];
+
+[kə'lektəbl]
+
+also collectable, 1650s, "that may be collected," from collect + -ible. Meaning "sought-after by collectors of relics, souveniers, etc." is recorded from 1888.
+
+collective
+
+adj. 集体的;共同的;集合的;集体主义的;
+n. [统]集体;[语]集合名词;集团;
+
+[kəˈlektɪv]
+
+early 15c., from Middle French collectif, from Latin collectivus, from collectus (see collect). As a noun, short for collective farm (in the USSR) it dates from 1925. collective farm first attested 1919 in translations of Lenin. Collective bargaining coined 1891 by Beatrice Webb; defined in U.S. 1935 by the Wagner Act. Collective noun is recorded from 1510s; collective security first attested 1934 in speech by Winston Churchill.
+
+collector
+
+n. 收藏家，采集者;收集器;收税员;[电子学] 集流器;
+
+[kəˈlektə(r)]
+
+late 14c., "gatherer of taxes, etc.," from Anglo-French collectour "collector" (of money or taxes; Old French collector, Modern French collecteur), from Late Latin collector, agent noun from colligere (see collect). Fem. form collectress is attested from 1825.
+
+collection
+
+n. 收集，采集;征收;收藏品;募捐;
+
+[kəˈlekʃn]
+
+late 14c., "action of collecting," from Old French collection (14c.), from Latin collectionem (nominative collectio) "a gathering together," noun of action from colligere (see collect). Especially of money gathered for religious or charitable purposes from 1530s. Meaning "a group of objects viewed as a whole" is from c. 1400.
+
+collect
+
+vt. 收集;收藏;接走;聚积;
+vi. 募捐;募集;
+adj. 由受话人付费的;
+
+[kəˈlekt]
+
+early 15c. (transitive), from Old French collecter "to collect" (late 14c.), from Latin collectus, past participle of colligere "gather together," from com- "together" (see com-) + legere "to gather" (see lecture (n.)). The intransitive sense is attested from 1794. Related: Collected; collecting. As an adjective meaning "paid by the recipient" it is attested from 1893, originally with reference to telegrams. 
+
+select
+
+vt. 选择;挑选;选拔;
+adj. 精选的;挑选出来的;苛择的;〈口〉爱挑三拣四的，挑剔的;
+
+[sɪˈlekt]
+
+1560s, from Latin selectus, past participle of seligere "choose out, single out, select; separate, cull," from se- "apart" (see secret (n.)) + legere "to gather, select" (see lecture (n.)). The noun meaning "a selected person or thing, that which is choice" is recorded from c. 1600. New England selectman first recorded 1640s.
+
+diligent
+
+adj. 勤奋的;勤勉的;用功的;费尽心血的;
+
+[ˈdɪlɪdʒənt]
+
+mid-14c., from Old French diligent (14c.), from Latin diligentem "attentive, assiduous" (see diligence). Related: Diligently.
+
+diligence
+
+n. 勤勉，勤奋;
+
+[ˈdɪlɪdʒəns]
+
+mid-14c., from Old French diligence "attention, care; haste, speed," from Latin diligentia "attentiveness, carefulness," from diligentem (nominative diligens) "attentive, assiduous, careful," originally present participle of diligere "single out, value highly, esteem, prize, love; aspire to, be content with, appreciate," originally "to pick out, select," from dis- "apart" (see dis-) + legere "choose, gather" (see lecture (n.)).
+
+Sense evolved from "love" through "attentiveness" to "carefulness" to "steady effort." From the secondary French sense comes the old useage of diligence for "public stage coach" (1742; dilly for short), from a French shortening of carrosse de diligence.
+
+elegant
+
+adj. （人或其举止）优美的;漂亮的;简炼的;简洁的;
+
+[ˈelɪgənt]
+
+late 15c., "tastefully ornate," from Middle French élégant (15c.), from Latin elegantem (nominative elegans) "choice, fine, tasteful," collateral form of present participle of eligere "select with care, choose" (see election). Meaning "characterized by refined grace" is from 1520s. Latin elegans originally was a term of reproach, "dainty, fastidious;" the notion of "tastefully refined" emerged in classical Latin. Related: Elegantly.
+
+Elegant implies that anything of an artificial character to which it is applied is the result of training and cultivation through the study of models or ideals of grace; graceful implies less of consciousness, and suggests often a natural gift. A rustic, uneducated girl may be naturally graceful, but not elegant. [Century Dictionary]
+
+elite
+
+n. <法>精华;精锐，精英;上层集团;（统称）掌权人物;
+
+[eɪˈli:t]
+
+"a choice or select body, the best part," 1823, from French élite "selection, choice," from Old French eslite (12c.), fem. past participle of elire, elisre "pick out, choose," from Latin eligere "choose" (see election). Borrowed in Middle English as "chosen person" (late 14c.), especially a bishop-elect; died out mid-15c.; re-introduced by Byron's "Don Juan." As an adjective by 1852. As a typeface, first recorded 1920.
+
+elective
+
+adj. 选任的;有选举权的;（课程）选修的;（可选择的）可选择的;
+n. 选修课程;
+
+[ɪˈlektɪv]
+
+early 15c., "voluntary," from Late Latin electivus, from elect-, past participle stem of eligere "to pick out, choose" (see election). In U.S., in reference to school subjects studied at the student's choice, first recorded 1847. As a noun, from 1701.
+
+elect
+
+vt. 选举;挑出，挑选;决定;
+vi. 选择，挑选;进行选举;
+adj. 精选的，选出的;选中的，当选而尚未就职的;
+n. 被选的人;
+
+[ɪˈlekt]
+
+early 15c., "to choose for an office, position, or duty," from Latin electus, past participle of eligere "to pick out, choose" (see election). Related: Elected; electing.
+
+elector
+
+n. 有选举权的人;选举人;总统选举人;<美>总统选举团成员;
+
+[ɪˈlektə(r)]
+
+"one who elects or has the right of choice," mid-15c., from Latin elector "chooser, selecter," agent noun from past participle stem of eligere "to pick out, choose" (see election).
+
+eligible
+
+adj. 合适的;在（法律上或道德上）合格的;有资格当选的;称心如意的;
+n. 合格者;合适者;称心如意的人;合乎条件的人（或东西）;
+
+[ˈelɪdʒəbl]
+
+early 15c., "fit or proper to be chosen," from Old French eligible "fit to be chosen" (14c.), from Late Latin eligibilis "that may be chosen," from Latin eligere "choose" (see election). Related: Eligibly.
+
+election
+
+n. 选举，当选;选举权;[神]神的选择;
+
+[ɪˈlekʃn]
+
+c. 1300, "act of choosing someone to occupy a position, elevation to office" (whether by one person or a body of electors); also "the holding of a vote by a body of electors; the time and place of such a vote," from Anglo-French eleccioun, Old French elecion "choice, election, selection" (12c.), from Latin electionem (nominative electio), noun of action from past participle stem of eligere "pick out, select," from ex "out" (see ex-) + -ligere, comb. form of legere "to choose, read" (see lecture (n.)). Theological sense "God's choice of someone" for eternal life is from late 14c. Meaning "act of choosing, choice" is from c. 1400.
+
+negligence
+
+n. 疏忽;[法]过失;粗心大意;
+
+[ˈneglɪdʒəns]
+
+mid-14c., from Old French negligence "negligence, sloth; injury, injustice" (12c.), and directly from Latin neclegentia, neglegentia "carelessness, heedlessness, neglect," from neglegentem (nominative neglegens) "heedless, careless, unconcerned," present participle of neglegere "to neglect" (see neglect (v.)).
+
+neglectful
+
+adj. 疏忽的，不注意的;
+
+[nɪˈglektfl]
+
+1640s, from neglect + -ful. Related: Neglectfully; neglectfulness. Earlier in same sense was neglective (1610s).
+
+neglect
+
+vt. 疏忽;忽略;遗漏;疏于照顾;
+n. 玩忽;被忽略的状态;怠慢;
+
+[nɪˈglekt]
+
+1520s, from Latin neglectus, past participle of neglegere "to make light of, disregard, be indifferent to, not heed, not trouble oneself about," literally "not to pick up," variant of neclegere, from Old Latin nec "not" (see deny) + legere "pick up, select" (see lecture (n.)). Related: Neglected; neglecting.
+
+apologize
+
+vi. 道歉，认错;辩解，辩护;
+
+[əˈpɒlədʒaɪz]
+
+1590s, "to speak in defense of;" see apology + -ize. Sense of "regretfully acknowledge" is attested by 1725. The Greek equivalent, apologizesthai, meant simply "to give an account." Related: Apologized; apologizing; apologizer.
+
+colloquium
+
+n. 讨论会，学术报告会;
+
+[kəˈləʊkwiəm]
+
+early 17c., "conversation, dialogue," from Latin colloquium "conversation" (see colloquy). Also as a legal term; meaning "meeting, assembly, conference, seminar" is attested from 1844.
+
+collogue
+
+vi. 畅谈，密议，密谈;
+
+[kə'ləʊg]
+
+1590s (implied in colloguing) "to flatter, curry favor," which is of unknown origin; perhaps from French colloque "conference, consultation" (16c., from Latin colloquium) and influenced by dialogue.
+
+intellectual
+
+adj. 智力的;有才智的;需用智力的;智力发达的;
+n. 知识分子;脑力劳动者;有极高智力的人;凭理智（而非感情）办事的人;
+
+[ˌɪntəˈlektʃuəl]
+
+late 14c., "grasped by the understanding" (rather than by the senses), from Old French intellectuel (13c.) and directly from Latin intellectualis "relating to the understanding," from intellectus "discernment, understanding," noun use of past participle of intelligere "to understand, discern" (see intelligence).
+
+Sense of "characterized by a high degree of intellect" is from 1819. Meaning "appealing to or engaging the mental powers" is from 1834. Intellectual property "products of the intellect" is attested from 1845. Adjective formations in the sense "of or pertaining to the intellect" included intellective (early 15c.), intellectile (1670s). 
+
+intelligible
+
+adj. 可理解的，明白易懂的，清楚的;
+
+[ɪnˈtelɪdʒəbl]
+
+late 14c., "able to understand, intelligent," from Latin intelligibilis, intellegibilis "that can understand; that can be understood," from intellegere "to understand, come to know" (see intelligence). In Middle English also "to be grasped by the intellect" (rather than the senses). In English, sense of "capable of being understood, that can be understood" first recorded c. 1600. Related: Intelligibly.
+
+intellect
+
+n. 智力，理解力;有才智的人;知识分子;
+
+[ˈɪntəlekt]
+
+"the sum of the cognitive facilities (except sense or sense and imagination), the capacity for reasoning truth," late 14c. (but little used before 16c.), from Old French intellect "intellectual capacity" (13c.), and directly from Latin intellectus "discernment, a perception, understanding," noun use of past participle of intelligere "to understand, discern" (see intelligence). The Latin word was used to translate Greek nous "mind, thought, intellect" in Aristotle.
+
+intelligent
+
+adj. 聪明的;理解力强的;有智力的;[计]智能的;
+
+[ɪnˈtelɪdʒənt]
+
+c. 1500, a back-formation from intelligence or else from Latin intelligentem (nominative intelligens), present participle of intelligere. Intelligent design, as a name for an alternative to atheistic cosmology and the theory of evolution, is from 1999. Related: Intelligently.
+
+intelligence
+
+n. 智力;聪颖;情报;情报机构;
+
+[ɪnˈtelɪdʒəns]
+
+late 14c., "the highest faculty of the mind, capacity for comprehending general truths;" c. 1400, "faculty of understanding, comprehension," from Old French intelligence (12c.) and directly from Latin intelligentia, intellegentia "understanding, knowledge, power of discerning; art, skill, taste," from intelligentem (nominative intelligens) "discerning, appreciative," present participle of intelligere "to understand, comprehend, come to know," from assimilated form of inter "between" (see inter-) + legere "choose, pick out, read" (see lecture (n.)).
+
+Meaning "superior understanding, sagacity, quality of being intelligent" is from early 15c. Sense of "information received or imparted, news" first recorded mid-15c., especially "secret information from spies" (1580s). Meaning "a being endowed with understanding or intelligence" is late 14c. Intelligence quotient first recorded 1921 (see I.Q.).
+
+irreligion
+
+n. 漠视宗教，敌视宗教;
+
+[ˌɪrɪ'lɪdʒən]
+
+1590s, from French irréligion (16c.) or directly from Late Latin irreligionem (nominative irreligio) "irreligion, impiety," from assimiliated form of in- "not" (see in- (1)) + religio (see religion).
+
+religious
+
+adj. 虔诚的;笃信宗教的;宗教的;谨慎的;
+n. 修士，修女，出家人;
+
+[rɪˈlɪdʒəs]
+
+c. 1200, "devout, pious, imbued with or expressive of religious devotion," from Anglo-French religius, Old French religious (12c., Modern French religieux) and directly from Latin religiosus, from religio (see religion). Meaning "pertaining to religion" is from 1530s. Transferred sense of "scrupulous, exact" is recorded from 1590s. Related: Religiousness.
+
+religion
+
+n. 宗教;支配自己生活的大事;教派;心爱的事物;
+
+[rɪˈlɪdʒən]
+
+c. 1200, "state of life bound by monastic vows," also "conduct indicating a belief in a divine power," from Anglo-French religiun (11c.), Old French religion "piety, devotion; religious community," and directly from Latin religionem (nominative religio) "respect for what is sacred, reverence for the gods; conscientiousness, sense of right, moral obligation; fear of the gods; divine service, religious observance; a religion, a faith, a mode of worship, cult; sanctity, holiness," in Late Latin "monastic life" (5c.).
+
+According to Cicero derived from relegere "go through again" (in reading or in thought), from re- "again" (see re-) + legere "read" (see lecture (n.)). However, popular etymology among the later ancients (Servius, Lactantius, Augustine) and the interpretation of many modern writers connects it with religare "to bind fast" (see rely), via notion of "place an obligation on," or "bond between humans and gods." In that case, the re- would be intensive. Another possible origin is religiens "careful," opposite of negligens. In English, meaning "particular system of faith" is recorded from c. 1300; sense of "recognition of and allegiance in manner of life (perceived as justly due) to a higher, unseen power or powers" is from 1530s.
+
+To hold, therefore, that there is no difference in matters of religion between forms that are unlike each other, and even contrary to each other, most clearly leads in the end to the rejection of all religion in both theory and practice. And this is the same thing as atheism, however it may differ from it in name. [Pope Leo XIII, Immortale Dei, 1885]
+
+dialogue
+
+n. 对话;（文学、戏剧、电影等中的）对话;对白;意见分歧者之间的意见交换;
+vt. 用对话表达;
+vi. 对话;进行非正式的意见交换;
+
+['daɪəlɒɡ]
+
+early 13c., "literary work consisting of a conversation between two or more persons," from Old French dialoge, from Latin dialogus, from Greek dialogos "conversation, dialogue," related to dialogesthai "converse," from dia- "across" (see dia-) + legein "speak" (see lecture (n.)).
+
+Sense broadened to "a conversation" c. 1400. Mistaken belief that it can only mean "conversation between two persons" is from confusion of dia- and di- (1); the error goes back to at least 1532, when trialogue was coined needlessly for "a conversation between three persons." A word that has been used for "conversation between two persons" is the hybrid duologue (1864).
+
+apology
+
+n. 道歉认错，愧悔;正式辩解，正式辩护;解释;〈口〉临时凑合的代用品;
+
+[əˈpɒlədʒi]
+
+early 15c., "defense, justification," from Late Latin apologia, from Greek apologia "a speech in defense," from apologeisthai "to speak in one's defense," from apologos "an account, story," from apo "away from, off" (see apo-) + logos "speech" (see lecture (n.)).
+
+The original English sense of "self-justification" yielded a meaning "frank expression of regret for wrong done," first recorded 1590s, but this was not the main sense until 18c. The old sense has tended to shift to the Latin form apologia (1784).
+
+anthology
+
+n. （诗、文等的）选集;
+
+[ænˈθɒlədʒi]
+
+1630s, "collection of poetry," from Latin anthologia, from Greek anthologia "collection of small poems and epigrams by several authors," literally "flower-gathering," from anthos "a flower" (see anther) + logia "collection, collecting," from legein "gather" (see lecture (n.)). Modern sense (which emerged in Late Greek) is metaphoric: "flowers" of verse, small poems by various writers gathered together.
+
+apologue
+
+n. 寓言，道德故事;
+
+['æpəˌlɒg]
+
+"moral fable, fictitious story intended to convey useful truths," 1550s, from French apologue, from Latin apologus, from Greek apologos "a story, tale, fable," from apo "off, away from" (see apo-) + logos "speech" (see lecture (n.)). Literally, "(that which comes) from a speech."
+
+epilogue
+
+n. （文艺作品的）尾声;后记;（戏剧等的）收场诗;收场白;
+
+[ˈepɪlɒg]
+
+early 15c., from Middle French epilogue (13c.), from Latin epilogus, from Greek epilogos "a conclusion, conclusion of a speech, inference," from epi "upon, in addition" (see epi-) + logos "a speaking" (see lecture (n.)). Earliest English sense was theatrical.
+
+tautology
+
+n. 同义反复，赘述;恒真命题;
+
+[tɔ:ˈtɒlədʒi]
+
+1570s, from Late Latin tautologia "representation of the same thing in other words," from Greek tautologia, from tautologos "repeating what has been said," from tauto "the same" (contraction of to auto, with to "the" + auto, see auto-) + -logos "saying," related to legein "to say" (see lecture (n.)). Related: Tautological.
+
+prologue
+
+n. 序言，开场白;
+vi. 作序言，作开场白;
+
+[ˈprəʊlɒg]
+
+early 14c., from Old French prologue (12c.) and directly from Latin prologus, from Greek prologos "preface to a play, speaker of a prologue," literally "a speech beforehand," from pro "before" (see pro-) + logos "discourse, speech," from legein "to speak" (see lecture (n.)).
+
+monologue
+
+n. （戏剧）独白;独角戏;长篇大论;
+
+['mɒnəlɒɡ]
+
+1660s, "long speech by one person," from French monologue, from Late Greek monologos "speaking alone," from Greek monos "single, alone" (see mono-) + logos "speech, word," from legein "to speak" (see lecture (n.)).
+
+logos
+
+n. 理念，理性，圣子;（某公司或机构的）标识，标志，徽标( logo的名词复数 );[复数]-gos logotype 的缩略形式;[计算机] LOGO 教学语言;儿童教学语言;
+
+['lɒgɒs]
+
+1580s, Logos, "the divine Word, second person of the Christian Trinity," from Greek logos "word, speech, statement, discourse," also "computation, account, also "reason," from PIE *log-o-, suffixed form of root *leg- (1) "to collect, gather" (with derivatives meaning "to speak," on notion of "to pick out words;" see lecture (n.)). The Greek word was used by Neo-Platonists in metaphysical and theological senses involving notions of both "reason" and "word" and subsequently picked up by New Testament writers.
+
+logo-
+
+pref. 表示“词语，语言，标记”之义;
+
+['ləʊgəʊ]
+
+before vowels log-, word-forming element meaning "speech, word," also "reason," from Greek logos "word, discourse; reason," from PIE root *leg- (1) "to collect" (with derivatives meaning "to speak," on notion of "to pick out words;" see lecture (n.)).
+
+catalog
+
+n. 目录，目录册，目录簿;[美]大学概况一览;登记，记载;产品样本;
+vt. 登记;为…编目;编目录;记载;
+v. 把…按目录分类;把…编目;
+
+['kætəlɔ:g]
+
+see catalogue.
+
+catalogue
+
+n. 目录，一览表;（美）大学情况便览;展览目录;产品样本;
+vt. 为…编目录;登记分类;记载，列入目录;登记（某人、某事的）详情;
+
+[ˈkætəlɒg]
+
+early 15c., from Old French catalogue "list, index" (14c.), and directly from Late Latin catalogus, from Greek katalogos "a list, register, enrollment" (such as the katalogos neon, the "catalogue of ships" in the "Iliad"), from kata "down; completely" (see cata-) + legein "to say, count" (see lecture (n.)).
+
+else
+
+adv. 其他;否则;另外;
+adj. 别的;其他的;
+
+[els]
+
+Old English elles "in another manner, other, otherwise, besides, different," from Proto-Germanic *aljaz (source also of Gothic aljis "other," Old High German eli-lenti, Old English el-lende, both meaning "in a foreign land;" see also Alsace), an adverbial genitive of the neuter of PIE root *al- (1) "beyond" (source also of Greek allos "other," Latin alius; see alias (adv.)). As a quasi-adjective, synonymous with other, from 1660s; the nuances of usage are often arbitrary.
+
+Productive of a number of handy compounds that somehow never got traction or have been suffered to fall from use: elsehow (1660s) "somehow or other;" elsewards (adv.), 1882, "somewhere else;" Old English elsewhat (pron.) " something else, anything else;" elsewhen (adv.), early 15c., "at another time; elsewhence (c. 1600); elsewho (1540s). Among the survivors are elsewhere, elsewise. Menacing or else, with omitted but implied threat, is from 1833.
+
+alienist
+
+n. 精神病学家，精神病医生（尤指在法庭做证者）;
+
+[eɪ'lɪənɪst]
+
+"one who scientifically treats or studies mental illness," 1864, from French aliéniste, from alienation in the sense of "insanity, loss of mental faculty" (compare alienation, since 15c. as "loss or derangement of mental faculties, insanity"), from Latin alienare "deprive of reason, drive mad," literally "to make another's, estrange" (see alienate).
+
+alienate
+
+vt. 使疏远，离间;使转移，放弃;[法]转让，让渡（财产或权利）;
+
+[ˈeɪliəneɪt]
+
+"make estranged" (in feelings or affections), 1540s, from Latin alienatus, past participle of alienare "to make another's, part with; estrange, set at variance," from alienus "of or belonging to another person or place," from alius "another, other, different" (see alias (adv.)). Related: Alienated; alienating.
+
+In Middle English the verb was simply alien "to estrange from," late 14c., from Old French aliener and directly from Latin alienare.
+
+alienage
+
+n. 外国人的身份;
+
+['eɪljənɪdʒ]
+
+"state of being alien," 1753, from alien (adj.) + -age. Other abstract noun forms include alienship (1846); alienness (1881).
+
+alienation
+
+n. 离间;疏远;（觉得周围环境与自己格格不入的）疏离感;离心离德;
+
+[ˌeɪlɪə'neɪʃn]
+
+late 14c., "transfer of ownership, action of estranging," from Old French alienacion and directly from Latin alienationem (nominative alienatio) "a transfer, surrender, separation," noun of action from past participle stem of alienare "to make another's, part with; estrange, set at variance," from alienus "of or belonging to another person or place," from alius "another, other, different" (see alias (adv.)).
+
+Middle English alienation also meant "deprivation of mental faculties, insanity" (early 15c.), from Latin alienare in a secondary sense "deprive of reason, drive mad;" hence alienist. Phrase alienation of affection as a U.S. legal term in divorce cases for "falling in love with someone else" dates to 1861.
+
+allopathy
+
+n. 对抗疗法;
+
+[æ'lɒpəθɪ]
+
+1836, "treatment of disease by remedies that produce effects opposite to the symptoms," from German Allopathie (Hahnemann), from Greek allos "other" (see alias (adv.)) + -patheia, "suffering, disease, feeling" (see -pathy). The term applied by homeopathists to traditional medicine; the formation is much-criticized by purists; the equivalent Greek compound had a different sense and was used in grammar, etc.
+
+allergic
+
+adj. 过敏的;过敏症的;对…极讨厌的;
+
+[əˈlɜ:dʒɪk]
+
+1911, from allergy (q.v.) + -ic; perhaps modeled on French allergique (1906). Figurative use, "antipathetic, repulsed" is from 1936.
+
+allergen
+
+n. 变应原;
+
+[ˈælədʒən]
+
+substance causing allergy, 1912, from allergy on model of antigen.
+
+allergy
+
+n. 过敏性反应;反感，厌恶;
+
+[ˈælədʒi]
+
+1911, from German Allergie, coined 1906 by  Austrian pediatrician Clemens E. von Pirquet (1874-1929) as an abstract noun from Greek allos "other, different, strange" (see alias (adv.)) + ergon "activity" (see organ).
+
+assumed name
+
+假名，笔名;
+
+[əˈsu:md neim]
+
+ 
+
+pan
+
+n. 平底锅;盘状的器皿;淘盘子，金盘，秤盘;
+vt. 淘金;在浅锅中烹调（食物）;[非正式用语]严厉的批评;
+vi. 淘金;在淘洗中收获金子;
+
+[pæn]
+
+Old English panne, earlier ponne (Mercian) "pan," from Proto-Germanic *panna "pan" (source also of Old Norse panna, Old Frisian panne, Middle Dutch panne, Dutch pan, Old Low German panna, Old High German phanna, German pfanne), probably an early borrowing (4c. or 5c.) from Vulgar Latin *patna, from Latin patina "shallow pan, dish, stewpan," from Greek patane "plate, dish," from PIE *pet-ano-, from root *pete- "to spread" (see pace (n.)). Irish panna probably is from English, and Lithuanian pana is from German.
+
+Used of pan-shaped parts of mechanical apparatus from c. 1590; hence flash in the pan, a figurative use from early firearms, where a pan held the priming (and the gunpowder might "flash," but no shot ensue).  To go out of the (frying) pan into the fire is first found in Spenser (1596).
+
+pandemic
+
+adj. （疾病）大流行的;普遍的，全世界的;
+n. （全国或全球性）流行病，大流行病;
+
+[pænˈdemɪk]
+
+1660s, from Late Latin pandemus, from Greek pandemos "pertaining to all people; public, common," from pan- "all" (see pan-) + demos "people" (see demotic). Modeled on epidemic. The noun is first recorded 1853, from the adjective.
+
+pandemonium
+
+n. 喧嚣; 嘈杂;大混乱;大混乱的场面;
+
+[ˌpændəˈməʊniəm]
+
+1667, Pandæmonium, in "Paradise Lost" the name of the palace built in the middle of Hell, "the high capital of Satan and all his peers," coined by John Milton (1608-1674) from Greek pan- "all" (see pan-) + Late Latin daemonium "evil spirit," from Greek daimonion "inferior divine power," from daimon "lesser god" (see demon).
+
+Transferred sense "place of uproar" is from 1779; that of "wild, lawless confusion" is from 1865. Related: Pandemoniac; pandemoniacal; pandemonian; pandemonic.
+
+panavision
+
+n. 宽银幕电影;
+
+[pænə'vɪʒən]
+
+1955, proprietary name of a type of wide-screen lens, word formed from elements of panorama + vision. 
+
+panoramic
+
+adj. 全景的;全貌的;
+
+[ˌpænə'ræmɪk]
+
+1813; see panorama + -ic. Panoramic camera is attested from 1878.
+
+panorama
+
+n. 全景画;全景照片;一连串景象或事;概论;
+
+[ˌpænəˈrɑ:mə]
+
+1796, "a painting on a revolving cylindrical surface," coined c. 1789 by inventor, Irish artist Robert Barker, literally "a complete view," from pan- "all" + Greek horama "sight, spectacle, that which is seen," from horan "to look, see," possibly from PIE root *wer- (4) "to perceive" (see ward (n.)). Meaning "comprehensive survey" is 1801.
+
+pancake
+
+n. 烙饼，薄煎饼;粉饼;[航]平降，平坠;
+vt. 使平坠著陆;使平展;
+vi. 平坠着陆;平展;
+
+[ˈpænkeɪk]
+
+early 15c. (late 13c. as a surname), from pan (n.) + cake (n.); as symbol of flatness c. 1600.
+
+pail
+
+n. 桶，提桶;一桶的量;
+
+[peɪl]
+
+mid-14c., of uncertain origin, probably from Old French paele, paelle "cooking or frying pan, warming pan;" also a liquid measure, from Latin patella "small pan, little dish, platter," diminutive of patina "broad shallow pan, stewpan" (see pan (n.)).
+
+Old English had pægel "wine vessel," but etymology does not support a connection. This Old English word possibly is from Medieval Latin pagella "a measure," from Latin pagella "column," diminutive of pagina (see page (n.1)).
+
+agora
+
+n. 集会，市场;
+
+[ˈægɒrə]
+
+1590s, "open assembly place, chief public square and marketplace of a town; popular political assembly held in such a place," from Greek agora "an assembly of the People" (as opposed to a council of Chiefs); "the place of assembly; a marketplace" (the typical spot for such an assembly), from ageirein "to assemble," from PIE root *ger- (1) "gather, gather together, assemble" (see gregarious). The Greek word also could mean "public speaking," and "things to be sold." For sense, compare Roman forum.
+
+agoraphobia
+
+n. 广场恐怖症，旷野恐怖症，陌生环境恐怖症;
+
+[ˌægərəˈfəʊbiə]
+
+"fear of crossing open spaces," 1873, from German Agorophobie, coined 1871 by Berlin psychiatrist Carl Westphal (1833-1890) from Greek agora "place of assembly, city market" (but here with the general sense "open space;" see agora) + -phobia "fear." Related: Agoraphobe; agoraphobic.
+
+paregoric
+
+adj. 止痛的;
+n. 止痛剂;
+
+[ˌpærə'gɒrɪk]
+
+"medicine that soothes pain," 1704, from adjective (1680s) "soothing," from Late Latin paregoricus, from Greek paregorikos "soothing, encouraging, consoling," from paregorein "speak soothingly to," from paregoros "consoling," from para- "beside" (see para- (1)) + root of agoreuein "speak in public," from agora "public assembly," from PIE root *ger- "to gather" (see gregarious).
+
+panegyric
+
+n. 赞美; 称颂; 颂词;颂扬的演讲或文章;
+
+[ˌpænəˈdʒɪrɪk]
+
+"eulogy, laudation," c. 1600, from French panégyrique (1510s), from Latin panegyricus "public eulogy," originally an adjective, "for a public festival," from Greek panegyrikos (logos) "(a speech) given in a public assembly," from panegyris "public assembly (especially in honor of a god)," from pan- "all" (see pan-) + agyris "place of assembly," Aeolic form of agora (see agora).
+
+allegory
+
+n. 寓言;
+
+[ˈæləgəri]
+
+"figurative treatment of an unmentioned subject under the guise of another similar to it in some way," late 14c., from Old French allegorie (12c.), from Latin allegoria, from Greek allegoria "figurative language, description of one thing under the image of another," literally "a speaking about something else," from allos "another, different" (see alias (adv.)) + agoreuein "speak openly, speak in the assembly," from agora "assembly" (see agora). Related: Allegorist.
+
+allegorical
+
+adj. 寓言的，讽喻的;
+
+[ˌælə'ɡɒrɪkl]
+
+1520s, earlier allegoric (late 14c.); from French allégorique, from Latin allegoricus, from Greek allegorikos, from allegoria "figurative language, description of one thing in terms of another" (see allegory). Related: Allegorically. Allegorical interpretation draws spiritual or figurative meaning from historical matter. 
+
+allegorize
+
+v. 寓言化，以寓言诠释;
+
+['ælɪɡəraɪz]
+
+1570s; see allegory + -ize. Related: Allegorized; allegorizing.
+
+category
+
+n. 类型，部门，种类，类别，类目;[逻，哲]范畴;体重等级;
+
+[ˈkætəgəri]
+
+1580s, from Middle French catégorie, from Late Latin categoria, from Greek kategoria "accusation, prediction, category," verbal noun from kategorein "to speak against; to accuse, assert, predicate," from kata "down to" (or perhaps "against;" see cata-) + agoreuein "to harangue, to declaim (in the assembly)," from agora "public assembly" (see agora). Original sense of "accuse" weakened to "assert, name" by the time Aristotle applied kategoria to his 10 classes of things that can be named.
+
+category should be used by no-one who is not prepared to state (1) that he does not mean class, & (2) that he knows the difference between the two .... [Fowler]
+
+categorical
+
+adj. 绝对的，无条件的;分类的，按类别的;断言的;确信无疑的;
+
+[ˌkætəˈgɒrɪkl]
+
+1590s, as a term in logic, "unqualified, asserting absolutely," from Late Latin categoricus, from Greek kategorikos "accusatory, affirmative, categorical," from kategoria (see category). General sense of "explicit, unconditional" is from 1610s. Categorical imperative, from the philosophy of Kant, first recorded 1827. Related: Categorically.
+
+sub-category
+
+子范畴;
+
+['sʌbk'ætɪɡərɪ]
+
+also subcategory, 1855, from sub- + category (n.).
+
+categorize
+
+vt. 把…归类，把…分门别类;
+
+[ˈkætəgəraɪz]
+
+1705, from category + -ize. Related: Categorized; categorizing.
+
+dig
+
+vt. （如用铲、锨或推土机等）挖掘;探究，发掘;刺，戳;喜欢，欣赏;
+vi. 挖掘，松土;整理;〈俚〉已理解;
+n. 一拳，一推;挖苦，讽刺;考古发掘;
+
+[dɪg]
+
+early 14c. (diggen), of uncertain origin, perhaps related to dike and ditch, either via Old French diguer (ultimately from a Germanic source), or directly from an unrecorded Old English word. Native words were deolfan (see delve), grafan (see grave (v.)).
+
+Slang sense of "understand" first recorded 1934 in African-American vernacular, probably based on the notion of "excavate." A slightly varied sense of "appreciate" emerged 1939. Strong past participle dug appeared 16c., but is not etymological. Related: Digging.
+
+delve
+
+vi. 探究;挖掘;
+vt. 钻研;挖掘;
+n. 穴;洞;
+
+[delv]
+
+Old English delfan "to dig" (class III strong verb; past tense dealf, past participle dolfen), common West Germanic verb (cognates: Old Saxon delban, Dutch delven, Middle High German telben "to dig"), from PIE root *dhelbh- (source also of Lithuanian delba "crowbar," Russian dolbit', Czech dlabati, Polish dłubać "to chisel;" Russian dolotó, Czech dlato, Polish dłuto "chisel"). Weak inflections emerged 14c.-16c. Related: Delved; delving.
+
+dikey
+
+adj. <俚>搞女性同性恋的，有搞女性同性恋特征的;
+
+ 
+
+dike
+
+n. 堤;排水沟;障碍物;女同性恋者;
+
+[daɪk]
+
+Old English dic "trench, ditch; an earthwork with a trench; moat," from Proto-Germanic *dik- (source also of Old Norse diki "ditch, fishpond," Old Frisian dik "mound, dam," Middle Dutch dijc "mound, dam, pool," Dutch dijk "dam," German Deich "embankment"), from PIE root *dhigw- "to pierce; to fix, fasten" (see fix (v.)).
+
+At first "an excavation," later applied to the resulting earth mound (late 15c.); a sense development paralleled by cognate forms in many languages. This is the northern variant of the word that in the south of England yielded ditch (n.).
+
+ditch
+
+n. 沟渠;壕沟;
+vt. 摆脱，抛弃;在…上掘沟;把…开入沟里;使（火车）出轨;
+vi. 使（飞机）在海上紧急降落，（在海上）迫降;开沟;
+
+[dɪtʃ]
+
+Old English dic "ditch, dike," a variant of dike (q.v.). Last ditch (1715) refers to the last line of military defenses.
+
+grave
+
+adj. 重大的，重要的;严重的;[音乐]沉重的;（颜色等）朴素的;
+adv. 沉重地，庄重地;极慢地;
+n. 坟墓，墓穴;埋葬…的地方;下场;死亡;
+vt. 雕刻;铭记;
+
+[ɡreɪv]
+
+"excavation in earth for reception of a dead body," Old English græf "grave; ditch, trench; cave," from Proto-Germanic *graban (source also of Old Saxon graf, Old Frisian gref, Old High German grab "grave, tomb;" Old Norse gröf "cave," Gothic graba "ditch"), from PIE root *ghrebh- (2) "to dig, to scratch, to scrape" (source also of Old Church Slavonic grobu "grave, tomb"); related to Old English grafan "to dig" (see grave (v.)).
+
+The normal mod. representation of OE. græf would be graff; the ME. disyllable grave, from which the standard mod. form descends, was prob. due to the especially frequent occurrence of the word in the dat. (locative) case. [OED]
+
+From Middle Ages to 17c., they were temporary, crudely marked repositories from which the bones were removed to ossuaries after some years and the grave used for a fresh burial. "Perpetual graves" became common from c. 1650. Grave-side (n.) is from 1744. Grave-robber attested from 1757. To make (someone) turn in his grave "behave in some way that would have offended the dead person" is first recorded 1888.
+
+guru
+
+n. 领袖;专家;权威;个人的宗教教师[指导];
+
+[ˈgʊru:]
+
+1806, gooroo, from Hindi guru "teacher, priest," from Sanskrit guru-s "one to be honored, teacher," from guru- "venerable, worthy of honor," literally "heavy, weighty," from PIE root *gwere- (2) "heavy" (see grave (adj.)). Generalized sense of "mentor" is from 1940 (in H.G. Wells); sense of "expert in something" first recorded c. 1966 in Canadian English in reference to Marshall McLuhan.
+
+grief
+
+n. 悲伤;悲痛;悲伤的事;
+
+[gri:f]
+
+early 13c., "hardship, suffering, pain, bodily affliction," from Old French grief "wrong, grievance, injustice, misfortune, calamity" (13c.), from grever "afflict, burden, oppress," from Latin gravare "make heavy; cause grief," from gravis "weighty" (see grave (adj.)). Meaning "mental pain, sorrow" is from c. 1300. Good grief as an exclamation of surprise, dismay, etc., is from 1912.
+
+graft
+
+n. 移植;嫁接;渎职;贪污，受贿;
+vt. 移植;嫁接，接枝;贪污;用嫁接法种植;
+vi. 移植;贪污;受贿;嫁接;
+
+[grɑ:ft]
+
+"shoot inserted into another plant," late 15c. alteration of Middle English graff (late 14c.), from Old French graife "grafting knife, carving tool; stylus, pen," from Latin graphium "stylus," from Greek grapheion "stylus," from graphein "to write" (see -graphy). So called probably on resemblance of a stylus to the pencil-shaped shoots used in grafting. The terminal -t- in the English word is not explained. Surgical sense is from 1871.
+
+groovy
+
+adj. 绝妙的;槽的，沟的;流行的;最佳状态的;
+
+[ˈgru:vi]
+
+1850, "pertaining to a groove," from groove (n.) + -y (2). Slang sense of "first-rate, excellent" is 1937, American English, from jazz slang phrase in the groove (1932) "performing well (without grandstanding)." As teen slang for "wonderful," it dates from c. 1941; popularized 1960s, out of currency by 1980. Earlier colloquial figurative sense was "having a tendency to routine, inclined to a specialized and narrow way of life or thought" (1882). Related: Grooviness.
+
+groove
+
+n. 沟，槽;[俚语]常规，老套：确定的规范;[俚语]理想状况;[俚语]非常愉快的经历;
+vt. 刻沟，刻槽;
+vi. 极其快乐，极其满意，过得快活;受愉快的刺激影响;投合，契合;
+
+[gru:v]
+
+c. 1400, "cave; mine; pit dug in the earth" (late 13c. in place names), from a Scandinavian source such as Old Norse grod "pit," or from Middle Dutch groeve "furrow, ditch" (Modern Dutch groef), both from Proto-Germanic *grobo (source also of Old Norse grof "brook, river bed," Old High German gruoba "ditch," German Grube "a pit, hole, ditch, grave," Gothic groba "pit, cave," Old English græf "ditch, grave"), from PIE root *ghrebh- (2) "to dig, bury, scratch" (see grave (n.)). Sense of "long, narrow channel or furrow," especially as cut by a tool, is 1650s. Meaning "spiral cut in a phonograph record" i
