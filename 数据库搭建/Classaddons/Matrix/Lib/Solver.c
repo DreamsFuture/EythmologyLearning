@@ -1,0 +1,43 @@
+/*
+ *	Copyright (C) 1992 Michael Tiller
+ *
+ *	Permission must be explicitly given by the author to use, copy,
+ *  modify, distribute and/or sell any portion of this code.  This
+ *  code is provided "as is" without any expressed or implied warranty.
+ *
+ */
+
+/*
+ * $Id: Solver.c,v 1.5 1993/06/10 21:01:04 tiller Exp tiller $
+ * ChangeLog:
+ *	$Log: Solver.c,v $
+ * Revision 1.5  1993/06/10  21:01:04  tiller
+ * Added support for USE_SET and tested it.  It appears to work.
+ *
+ * Revision 1.4  1993/05/26  15:45:16  tiller
+ * *** empty log message ***
+ *
+ * Revision 1.4  1993/05/26  15:45:16  tiller
+ * *** empty log message ***
+ *
+ * Revision 1.3  1993/03/07  17:37:41  tiller
+ * Various changes to get Non-Linear Optimization Homework working
+ *
+ * Revision 1.3  1993/03/07  17:37:41  tiller
+ * Various changes to get Non-Linear Optimization Homework working
+ *
+ * Revision 1.2  1993/02/20  19:03:12  tiller
+ * Added RCS header information
+ *
+ */
+
+
+#include	<Solver.h>
+#ifdef __GNUC__
+#pragma implementation
+#endif
+
+Solver::Solver(Matrix& m)
+{
+	matrix = &m;
+}

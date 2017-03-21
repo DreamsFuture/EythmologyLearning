@@ -1,0 +1,2 @@
+compile InsereRegistros.c separadamente no Dev c++;
+colie o arquivo "banco.dbf" para a pasta do programa "arvorebmais.exe", uma pasta acima

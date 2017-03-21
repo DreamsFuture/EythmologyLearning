@@ -1,0 +1,1677 @@
+
+
+
+
+
+
+
+
+  			LAW&Co. B+Tree Manual
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+	What follows are manual entries documenting the most common
+	functions used to integrate the B+Tree into your system.  
+	The manual is not intended to cover the functionality completely, 
+	but rather allow the programmer to grasp the basic functionality
+	of the index, and begin building a working interface to the B+Tree 
+	from your system.  
+
+	Sorry, but this manual has always been a pretty rough draft
+	and probably always will be.
+
+
+
+
+
+
+ CHECK(3)                       c2man utils.c                       CHECK(3)
+                                10 April 1995
+
+
+
+ NAME
+      CHECK - CHECK
+
+ SYNOPSIS
+      void CHECK
+      (
+           BTREE *btree,
+           int pause
+      );
+
+ PARAMETERS
+      BTREE *btree
+           Not Documented.
+
+      int pause
+           Not Documented.
+
+ DESCRIPTION
+      CHECK.
+
+ RETURNS
+      NONE.
+
+ DISCUSSION
+      Check the contents of the hierarchy.  Print a report concerning the
+      contents currently in the hierarchy.
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+
+
+
+
+                                    - 2 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+
+
+
+ Close(3)                       c2man btree.c                       Close(3)
+                                13 April 1995
+
+
+
+ NAME
+      Close - Close
+
+ SYNOPSIS
+      int Close(BTREE *btree);
+
+ PARAMETERS
+      BTREE *btree
+           Pointer to tree descriptor.
+
+ DESCRIPTION
+      Shutdown a btree.
+
+ RETURNS
+      Result of the block file handler closing function.
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 3 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+
+
+
+ CurrentKey(3)                  c2man btree.c                  CurrentKey(3)
+                                13 April 1995
+
+
+
+ NAME
+      CurrentKey - CurrentKey
+
+ SYNOPSIS
+      struct KeyGroup *CurrentKey(BTREE *btree);
+
+ PARAMETERS
+      BTREE *btree
+           Pointer to tree descriptor.
+
+ DESCRIPTION
+      Identify the current key.
+
+ RETURNS
+      Returns a pointer to the key group which is designated as the active
+      key.
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 4 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+ DLL_Count(3)                    c2man dll.c                    DLL_Count(3)
+                                23 March 1995
+
+
+
+ NAME
+      DLL_Count - .
+
+ SYNOPSIS
+      int DLL_Count(DLL activeDLL);
+
+ PARAMETERS
+      DLL activeDLL
+           Not Documented.
+
+ DESCRIPTION
+      Function Name: DLL_Count Access from:        External
+      Synopsis:      int DLL_Count() Arguments:          none
+      Description:        Access function to the link list node count.
+      Return:        Number of nodes in the list.  History: Created 10/16/91
+      by Larry A. Walker for Modified:.
+
+ SEE ALSO
+
+        DLL_Count DLL_Create DLL_Current DLL_Delete
+        DLL_First DLL_Free DLL_Insert DLL_Next DLL_Prev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 5 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+
+ DLL_Create(3)                   c2man dll.c                   DLL_Create(3)
+                                23 March 1995
+
+
+
+ NAME
+      DLL_Create - .
+
+ SYNOPSIS
+      DLL DLL_Create(void);
+
+ DESCRIPTION
+      Function Name: DLL_Create Access from:        External
+      Synopsis:      DLL DLL_Create(void); Arguments:          none
+      Description:        Create the DLL descriptor and initialize it
+      Return:        DLL (pointer to the DLL descriptor ) History: Created
+      by Larry A. Walker for Modified:.
+
+ SEE ALSO
+
+        DLL_First DLL_Free DLL_Insert DLL_Next DLL_Prev
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 6 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+
+ DLL_Current(3)                  c2man dll.c                  DLL_Current(3)
+                                23 March 1995
+
+
+
+ NAME
+      DLL_Current - .
+
+ SYNOPSIS
+      void *DLL_Current(DLL activeDLL);
+
+ PARAMETERS
+      DLL activeDLL
+           Not Documented.
+
+ DESCRIPTION
+      Function Name: DLL_Current Access from:        External
+      Synopsis:      void * DLL_Current() Arguments:          none
+      Description:        Return a pointer to the data content of the
+      Current node.  Return:        data pointer, NULL for failure History:
+      Created 10/16/91 by Larry A. Walker for Modified:.
+
+ SEE ALSO
+
+        DLL_Count DLL_Create DLL_Current DLL_Delete
+        DLL_First DLL_Free DLL_Insert DLL_Next DLL_Prev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 7 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+
+ DLL_Delete(3)                   c2man dll.c                   DLL_Delete(3)
+                                23 March 1995
+
+
+
+ NAME
+      DLL_Delete - .
+
+ SYNOPSIS
+      int DLL_Delete(DLL activeDLL);
+
+ PARAMETERS
+      DLL activeDLL
+           Not Documented.
+
+ DESCRIPTION
+      Function Name: DLL_Delete Access from:        External
+      Synopsis:      int DLL_Delete() Arguments:          none
+      Description:        Delete the active node from the link list The
+      current active node becomes the prior node unless there is no prior
+      node, then it becomes then next node on the list.
+      Return:        DLLSUCCESS or DLLFAIL History: Created 10/16/91 by
+      Larry A. Walker for Modified:.
+
+ SEE ALSO
+
+        DLL_Count DLL_Create DLL_Current DLL_Delete
+        DLL_First DLL_Free DLL_Insert DLL_Next DLL_Prev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 8 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+
+ DLL_First(3)                    c2man dll.c                    DLL_First(3)
+                                23 March 1995
+
+
+
+ NAME
+      DLL_First - .
+
+ SYNOPSIS
+      void *DLL_First(DLL activeDLL);
+
+ PARAMETERS
+      DLL activeDLL
+           Not Documented.
+
+ DESCRIPTION
+      Function Name: DLL_First Access from:   External Synopsis:      void *
+      DLL_First() Arguments:          none Description:   Set the active
+      pointer to the first node.  Return a pointer to the data content of
+      the first node.  Return:        data pointer, NULL for failure
+      History: Created 10/16/91 by Larry A. Walker for       Larry A. Walker
+      & Co.  Modified:.
+
+ SEE ALSO
+
+        DLL_Count DLL_Create DLL_Current DLL_Delete
+        DLL_First DLL_Free DLL_Insert DLL_Next DLL_Prev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 9 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+
+ DLL_Free(3)                     c2man dll.c                     DLL_Free(3)
+                                23 March 1995
+
+
+
+ NAME
+      DLL_Free - .
+
+ SYNOPSIS
+      void DLL_Free(DLL activeDLL);
+
+ PARAMETERS
+      DLL activeDLL
+           Not Documented.
+
+ DESCRIPTION
+      Function Name: DLL_Free Access from:        External
+      Synopsis:      void DLL_Free() Arguments:          DLL
+      Description:        Free the storage at the current node
+      Return:        none History: Created 10/16/91 by Larry A. Walker for
+      Modified:.
+
+ SEE ALSO
+
+        DLL_Count DLL_Create DLL_Current DLL_Delete
+        DLL_First DLL_Free DLL_Insert DLL_Next DLL_Prev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 10 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+
+ DLL_Insert(3)                   c2man dll.c                   DLL_Insert(3)
+                                23 March 1995
+
+
+
+ NAME
+      DLL_Insert - .
+
+ SYNOPSIS
+      int DLL_Insert
+      (
+           DLL activeDLL,
+           int where,
+           void *data
+      );
+
+ PARAMETERS
+      DLL activeDLL
+           Not Documented.
+
+      int where
+           Not Documented.
+
+      void *data
+           Not Documented.
+
+ DESCRIPTION
+      Function Name: DLL_Insert Access from:   External Synopsis:      int
+      DLL_Insert( int where, void * data ) Arguments:          data pointer
+      to Link List data area Description:   If the link list was never
+      previously created create the link list.  Insert into the list at the
+      next available node the data pointer and adjust prior node and next
+      node pointers.  Return:        data pointer, NULL for failure History:
+      Created by Larry A. Walker for  Larry A. Walker & Co.  Modified:.
+
+ SEE ALSO
+
+        DLL_Count DLL_Create DLL_Current DLL_Delete
+        DLL_First DLL_Free DLL_Insert DLL_Next DLL_Prev
+
+
+
+
+
+
+                                    - 11 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+
+ DLL_Next(3)                     c2man dll.c                     DLL_Next(3)
+                                23 March 1995
+
+
+
+ NAME
+      DLL_Next - .
+
+ SYNOPSIS
+      void *DLL_Next(DLL activeDLL);
+
+ PARAMETERS
+      DLL activeDLL
+           Not Documented.
+
+ DESCRIPTION
+      Function Name: DLL_Next Access from:   External Synopsis:      void *
+      DLL_Next(); Arguments:          none Description:   Set the active
+      pointer to the next node.  Return a pointer to the data content of the
+      next node.  Return:        data pointer, NULL for failure History:
+      Created 10/16/91 by Larry A. WalOer for Modified:.
+
+ SEE ALSO
+
+        DLL_Count DLL_Create DLL_Current DLL_Delete
+        DLL_First DLL_Free DLL_Insert DLL_Next DLL_Prev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 12 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+
+ DLL_Prev(3)                     c2man dll.c                     DLL_Prev(3)
+                                23 March 1995
+
+
+
+ NAME
+      DLL_Prev - .
+
+ SYNOPSIS
+      void *DLL_Prev(DLL activeDLL);
+
+ PARAMETERS
+      DLL activeDLL
+           Not Documented.
+
+ DESCRIPTION
+      Function Name: DLL_Prev Access from:        External
+      Synopsis:      void * DLL_Prev() Arguments:          none
+      Description:        Set the active pointer to the previous node.
+      Return a pointer to the data content of the previous node.
+      Return:        data pointer, NULL for failure History: Created
+      10/16/91 by Larry A. Walker for Modified:.
+
+ SEE ALSO
+
+        DLL_Count DLL_Create DLL_Current DLL_Delete
+        DLL_First DLL_Free DLL_Insert DLL_Next DLL_Prev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 13 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+
+ DUMP(3)                        c2man utils.c                        DUMP(3)
+                                10 April 1995
+
+
+
+ NAME
+      DUMP - DUMP
+
+ SYNOPSIS
+      void DUMP(BTREE *btree);
+
+ PARAMETERS
+      BTREE *btree
+           Not Documented.
+
+ RETURNS
+      NONE.
+
+ DISCUSSION
+      Walk every block in the btree file and write all the header and key
+      information.
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 14 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+ DebugIsOpen(3)                 c2man debug.c                 DebugIsOpen(3)
+                                23 March 1995
+
+
+
+ NAME
+      DebugIsOpen - --- Sometimes we just need to know if debug is on
+
+ SYNOPSIS
+      int DebugIsOpen(void);
+
+ DESCRIPTION
+      --- Sometimes we just need to know if debug is on.
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 15 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+
+ DebugLevel(3)                  c2man debug.c                  DebugLevel(3)
+                                23 March 1995
+
+
+
+ NAME
+      DebugLevel - --- Sometimes we want to know what the debug level is
+
+ SYNOPSIS
+      int DebugLevel(void);
+
+ DESCRIPTION
+      --- Sometimes we want to know what the debug level is.
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 16 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+
+ Decrement(3)                   c2man btree.c                   Decrement(3)
+                                13 April 1995
+
+
+
+ NAME
+      Decrement - Decrement
+
+ SYNOPSIS
+      struct KeyGroup *Decrement(BTREE *btree);
+
+ PARAMETERS
+      BTREE *btree
+           Pointer to tree descriptor.
+
+ DESCRIPTION
+      Decrement the internal pointers to the next key in the tree.
+
+ RETURNS
+      Pointer to previous key group structure in the tree.  NULL on failure.
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 17 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+
+ DeleteKey(3)                   c2man btree.c                   DeleteKey(3)
+                                13 April 1995
+
+
+
+ NAME
+      DeleteKey - DeleteKey
+
+ SYNOPSIS
+      int DeleteKey
+      (
+           BTREE *btree,
+           union Key *delete_key
+      );
+
+ PARAMETERS
+      BTREE *btree
+           Pointer to tree descriptor.
+
+      union Key *delete_key
+           An encapsolated key.
+
+ DESCRIPTION
+      Delete a key, pointed to by a union Key pointer.
+
+ RETURNS
+      SUCCESS or FAIL.
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 18 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+ DisplayHeader(3)               c2man utils.c               DisplayHeader(3)
+                                10 April 1995
+
+
+
+ NAME
+      DisplayHeader - DisplayHeader
+
+ SYNOPSIS
+      void DisplayHeader(BTREE *btree);
+
+ PARAMETERS
+      BTREE *btree
+           Not Documented.
+
+ DESCRIPTION
+      DisplayHeader.
+
+ RETURNS
+      NONE.
+
+ DISCUSSION
+      Displays information concerning the active node.
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 19 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+ First(3)                       c2man btree.c                       First(3)
+                                13 April 1995
+
+
+
+ NAME
+      First - First
+
+ SYNOPSIS
+      struct KeyGroup *First(BTREE *btree);
+
+ PARAMETERS
+      BTREE *btree
+           Pointer to tree descriptor.
+
+ DESCRIPTION
+      Locate and return a pointer to the first key group in the tree.
+
+ RETURNS
+      Pointer the the first key group in the tree, or NULL on failure.
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 20 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+
+ FlushHierarchy(3)              c2man btree.c              FlushHierarchy(3)
+                                13 April 1995
+
+
+
+ NAME
+      FlushHierarchy - FlushHierarchy
+
+ SYNOPSIS
+      int FlushHierarchy(BTREE *btree);
+
+ PARAMETERS
+      BTREE *btree
+           Pointer to tree descriptor.
+
+ DESCRIPTION
+      The hierarchy leading to a node is held in a vector of nodes beginning
+      with the root node and ending with the active node.  Nodes that have
+      been modified are marked in the hierarchy as "dirty".  When a new node
+      is being listed into the hierarchy, it may overlay a node already
+      listed in the node.  The underlying node is written back to disk
+      before the new node overwrites.  This function walks the hierarchy,
+      writes dirty nodes to disk and marking them clean.
+
+ RETURNS
+      SUCCESS or FAIL.
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 21 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+
+ Increment(3)                   c2man btree.c                   Increment(3)
+                                13 April 1995
+
+
+
+ NAME
+      Increment - Increment
+
+ SYNOPSIS
+      struct KeyGroup *Increment(BTREE *btree);
+
+ PARAMETERS
+      BTREE *btree
+           Pointer to tree descriptor.
+
+ DESCRIPTION
+      Increment the internal pointers to the next key in the tree.
+
+ RETURNS
+      Pointer to next key group structure in the tree.  NULL on failure.
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 22 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+ InsertKey(3)                   c2man btree.c                   InsertKey(3)
+                                13 April 1995
+
+
+
+ NAME
+      InsertKey - InsertKey
+
+ SYNOPSIS
+      int InsertKey
+      (
+           BTREE *btree,
+           struct KeyGroup *insert_group
+      );
+
+ PARAMETERS
+      BTREE *btree
+           Pointer to tree descriptor.
+
+      struct KeyGroup *insert_group
+           An encapsolated key.
+
+ DESCRIPTION
+      Insert a key into the tree, provide the key as a pointer to a
+      completed KeyGroup structure.
+
+ RETURNS
+      SUCCESS or FAIL.
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 23 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+ InstallCompare(3)              c2man btree.c              InstallCompare(3)
+                                13 April 1995
+
+
+
+ NAME
+      InstallCompare - InstallCompare
+
+ SYNOPSIS
+      int InstallCompare
+      (
+           BTREE *btree,
+           int (*fn)(union Key *,struct KeyGroup *,int)
+      );
+
+ PARAMETERS
+      BTREE *btree
+           Pointer to tree descriptor.
+
+      int (*fn)(union Key *,struct KeyGroup *,int)
+           Not Documented.
+
+ DESCRIPTION
+      Installs a new compare function for fixed length keys - composite
+      keys.
+
+ RETURNS
+      SUCCESS or FAIL.
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 24 -            Formatted:  May 1, 1997
+
+
+
+
+
+ Last(3)                        c2man btree.c                        Last(3)
+                                13 April 1995
+
+
+
+ NAME
+      Last - Last
+
+ SYNOPSIS
+      struct KeyGroup *Last(BTREE *btree);
+
+ PARAMETERS
+      BTREE *btree
+           Pointer to tree descriptor.
+
+ DESCRIPTION
+      Find the last key in the tree.
+
+ RETURNS
+      Pointer to last key group structure in the tree.  NULL on failure.
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 25 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+ OpenBtree(3)                   c2man btree.c                   OpenBtree(3)
+                                13 April 1995
+
+
+
+ NAME
+      OpenBtree - Btree
+
+ SYNOPSIS
+      BTREE *OpenBtree
+      (
+           char *index_name,
+           int create,
+           int tok,
+           int dups,
+           int fix_key_size
+      );
+
+ PARAMETERS
+      char *index_name
+           Disk file name.
+
+      int create
+           True or false.
+
+      int tok
+           VAR_LNG_KEY or FIX_LNG_KEY or LONG_KEY or DOUBLE_KEY.
+
+      int dups
+           Duplicate keys allowed, true or false.
+
+      int fix_key_size
+           Ignored, or size of key if fixed length.
+
+ DESCRIPTION
+      Btree initialization function.  Will create a new index if second
+      parameter is CREATE and index does not already exist.  The first
+      parameter is the name of the index.  The third parameter is the type
+      of key.  If the fourth parameter is set to 1, duplicate keys will be
+      allowed.  If 0 duplicates will not be allowed.  If the keys are not
+      variable length, the fixed key length size should be the fifth
+      parameter.  For example, long keys would be sizeof(long).
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+ OpenBtree(3)                   c2man btree.c                   OpenBtree(3)
+                                13 April 1995
+
+
+
+      DLL_Free(3), DUMP(3), DUMPOne(3), TreeDebug(3), DisplayHeader(3),
+      DisplayKey(3), CHECK(3), NodePosn(3), ReportState(3),
+      PrintBtDescriptor(3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 27 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+ Update(3)                      c2man btree.c                      Update(3)
+                                13 April 1995
+
+
+
+ NAME
+      Update - Update
+
+ SYNOPSIS
+      int Update
+      (
+           BTREE *btree,
+           void *new_data
+      );
+
+ PARAMETERS
+      BTREE *btree
+           Pointer to tree descriptor.
+
+      void *new_data
+           New key data, consistent in type to data being replaced.
+
+ DESCRIPTION
+      Update the data of the current key.
+
+ RETURNS
+      Overwrites the key data or the address stored in a key.
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 28 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+ create_c_string(3)             c2man btree.c             create_c_string(3)
+                                13 April 1995
+
+
+
+ NAME
+      create_c_string - create_c_string
+
+ SYNOPSIS
+      int create_c_string
+      (
+           char *to,
+           char *fm
+      );
+
+ PARAMETERS
+      char *to
+           Put the new string here.
+
+      char *fm
+           Get the pascal string from here.
+
+ DESCRIPTION
+      This utility will take an index type (pascal type) string and create a
+      standard null terminated C string.
+
+ RETURNS
+      Always returns SUCCESS.
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+
+
+
+
+
+
+
+                                    - 29 -            Formatted:  May 1, 1997
+
+
+
+
+
+
+
+
+
+ create_index_string(3)         c2man btree.c         create_index_string(3)
+                                13 April 1995
+
+
+
+ NAME
+      create_index_string - create_index_string
+
+ SYNOPSIS
+      int create_index_string
+      (
+           char *to,
+           char *fm
+      );
+
+ PARAMETERS
+      char *to
+           Place the results here.
+
+      char *fm
+           Convert this string.
+
+ DESCRIPTION
+      This utility will take a null terminated C string and create a pascal
+      type string as required for indexing.  The first byte of the string
+      provides the length of the string.  The length of the string is
+      therefor limited to 255 characters.  In actual indexing practice the
+      it isnt reasonable to assume that variable length keys should be
+      allowed to be more than about 64 characters.  If you want your index
+      to fail, change the commented code.  As it is, it will simply take the
+      first MASVARSTR characters from the string to create the index key
+      string.
+
+ RETURNS
+      SUCCESS or FAIL.
+
+ SEE ALSO
+
+        CHECK Close CurrentKey DUMP DebugIsOpen
+        DebugLevel Decrement DeleteKey DisplayHeader
+        First FlushHierarchy Increment InsertKey
+        InstallCompare Last OpenBtree OpenBtree
+        Update create_c_string create_index_string
+
+
+
+
+
+                                    - 30 -            Formatted:  May 1, 1997
+
+
+
+
+
+

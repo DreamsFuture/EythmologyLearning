@@ -1,0 +1,17 @@
+LAB 2 : Implementing a B+ Tree database index
+
+Akshaan Kakar 804029538   
+Heather Blockhus 604008122
+
+
+
+Part A : Implementing the load function in the SQL Engine (load tuples from a file)
+
+
+Part B : Implementing the classes for leaf nodes and non-leaf nodes of the B+ Tree
+
+The nodes of out B+ Tree hold the (key, pointer) pairs in a singly linked list. In the case of leaves, the pointer is a RecordID while for non-leaves it is a PageID. The nodes of both types maintain a PageID named end_pid. For non-leaves, this points to the page with keys larger than all the keys in the current node. For leaves this end_pid points to the next sibling. In each (key,pointer) pair in a node, the 'pointer' points to the page or record with values less than 'key'.
+
+
+
+

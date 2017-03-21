@@ -1,0 +1,9 @@
+na struct arvoreInfo (arquivo arvoreb.h) foram colocados contadores:
+
+cmalloc, cfree, registros e cerro que contam, respectivamente, quantas vezes
+a memória foi alocada e desalocada, quantos registros foram inseridos na arvore e
+quanto lixo de memória não pode ser desalocado;
+
+essas informações não estão gerando output e devem ser removidas;
+
+o arquivo arvoreb.bin pode ser aberto pelo visual studio;

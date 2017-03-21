@@ -1,0 +1,546 @@
+? diff.txt
+? BplusDotNet/BplusDotNet.suo
+? BplusDotNet/encodingTest
+? BplusDotNet/BplusDotNet/obj/Debug
+? BplusDotNet/testing/bplustests.csproj.user
+? BplusDotNet/testing/obj/Debug/temp
+? BplusDotNet/testing/obj/Debug/TempPE
+? NET/sourceforge/BplusJ/BplusJ/hBplusTreeBytes.java.save
+? NET/sourceforge/BplusJ/testing/encodingTest.class
+? NET/sourceforge/BplusJ/testing/encodingTest.java
+Index: BplusDotNet/BplusDotNet.sln
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/BplusDotNet/BplusDotNet.sln,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BplusDotNet.sln
+9a10,13
+> Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "encodingTest", "encodingTest\encodingTest.csproj", "{3B043821-50A8-4832-BBF1-4049E3F51F5C}"
+> 	ProjectSection(ProjectDependencies) = postProject
+> 	EndProjectSection
+> EndProject
+23a28,31
+> 		{3B043821-50A8-4832-BBF1-4049E3F51F5C}.Debug.ActiveCfg = Debug|.NET
+> 		{3B043821-50A8-4832-BBF1-4049E3F51F5C}.Debug.Build.0 = Debug|.NET
+> 		{3B043821-50A8-4832-BBF1-4049E3F51F5C}.Release.ActiveCfg = Release|.NET
+> 		{3B043821-50A8-4832-BBF1-4049E3F51F5C}.Release.Build.0 = Release|.NET
+Index: BplusDotNet/BplusDotNet/hBplusTreeBytes.cs
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/BplusDotNet/BplusDotNet/hBplusTreeBytes.cs,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 hBplusTreeBytes.cs
+76,77d75
+< 			// compute a hash code as a string which has maxbytecount size as a byte sequence
+< 			byte[] resultbytes = new byte[maxbytecount];
+79,81c77,80
+< 			int sevenbits = 127;
+< 			int eighthbit = 128;
+< 			bool invert = false;
+---
+> 			System.Security.Cryptography.MD5 D = System.Security.Cryptography.MD5.Create();
+> 			byte[] digest = D.ComputeHash(inputbytes);
+> 			byte[] resultbytes = new byte[maxbytecount];
+> 			// copy digest translating to printable ascii
+84,92c83,84
+< 				resultbytes[i] = (byte) (i & sevenbits);
+< 			}
+< 			for (int i=0; i<inputbytes.Length; i++) 
+< 			{
+< 				int inputbyte = inputbytes[i];
+< 				int outputindex = i % maxbytecount;
+< 				int outputbyte = resultbytes[outputindex];
+< 				int rotator = (i/maxbytecount) % 8;
+< 				if (rotator!=0) 
+---
+> 				int r = digest[i % digest.Length];
+> 				if (r>127) 
+94,96c86
+< 					int hipart = inputbyte << rotator;
+< 					int lowpart = inputbyte >> (8-rotator);
+< 					inputbyte = (hipart | lowpart);
+---
+> 					r = 256-r;
+98,99c88
+< 				outputbyte = ((inputbyte ^ outputbyte) % sevenbits);
+< 				if ( (inputbyte&eighthbit)!=0 ) 
+---
+> 				if (r<0) 
+101c90
+< 					invert = !invert;
+---
+> 					r = -r;
+103,107c92,95
+< 				if (invert) 
+< 				{
+< 					outputbyte = (outputbyte ^ sevenbits) % eighthbit;
+< 				}
+< 				resultbytes[outputindex] = (byte) outputbyte;
+---
+> 				//Console.WriteLine(" before "+i+" "+r);
+> 				r = r%79 + 40; // printable ascii
+> 				//Console.WriteLine(" "+i+" "+r);
+> 				resultbytes[i] = (byte)r;
+110,113d97
+< 			if (result.Length!=maxbytecount) 
+< 			{
+< 				throw new BplusTreeException("bad hash value generated with length: "+result.Length+" not "+maxbytecount);
+< 			}
+115a100,141
+> //		public override string PrefixForByteCount(string s, int maxbytecount)
+> //		{
+> //			// compute a hash code as a string which has maxbytecount size as a byte sequence
+> //			byte[] resultbytes = new byte[maxbytecount];
+> //			byte[] inputbytes = BplusTree.StringToBytes(s);
+> //			int sevenbits = 127;
+> //			int eighthbit = 128;
+> //			bool invert = false;
+> //			for (int i=0; i<maxbytecount; i++) 
+> //			{
+> //				resultbytes[i] = (byte) (i & sevenbits);
+> //			}
+> //			for (int i=0; i<inputbytes.Length; i++) 
+> //			{
+> //				int inputbyte = inputbytes[i];
+> //				int outputindex = i % maxbytecount;
+> //				int outputbyte = resultbytes[outputindex];
+> //				int rotator = (i/maxbytecount) % 8;
+> //				if (rotator!=0) 
+> //				{
+> //					int hipart = inputbyte << rotator;
+> //					int lowpart = inputbyte >> (8-rotator);
+> //					inputbyte = (hipart | lowpart);
+> //				}
+> //				outputbyte = ((inputbyte ^ outputbyte) % sevenbits);
+> //				if ( (inputbyte&eighthbit)!=0 ) 
+> //				{
+> //					invert = !invert;
+> //				}
+> //				if (invert) 
+> //				{
+> //					outputbyte = (outputbyte ^ sevenbits) % eighthbit;
+> //				}
+> //				resultbytes[outputindex] = (byte) outputbyte;
+> //			}
+> //			string result = BplusTree.BytesToString(resultbytes);
+> //			if (result.Length!=maxbytecount) 
+> //			{
+> //				throw new BplusTreeException("bad hash value generated with length: "+result.Length+" not "+maxbytecount);
+> //			}
+> //			return result;
+> //		}
+Index: BplusDotNet/BplusDotNet/bin/Debug/BplusDotNet.dll
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/BplusDotNet/BplusDotNet/bin/Debug/BplusDotNet.dll,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BplusDotNet.dll
+Binary files /tmp/cvsFnWaB4 and BplusDotNet.dll differ
+Index: BplusDotNet/testing/bin/Debug/BplusDotNet.dll
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/BplusDotNet/testing/bin/Debug/BplusDotNet.dll,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BplusDotNet.dll
+Binary files /tmp/cvsY2Tazm and BplusDotNet.dll differ
+Index: BplusDotNet/testing/obj/Debug/bplustests.projdata
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/BplusDotNet/testing/obj/Debug/bplustests.projdata,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 bplustests.projdata
+Binary files /tmp/cvs6TqZzE and bplustests.projdata differ
+Index: BplusPy/BplusTree.pyc
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/BplusPy/BplusTree.pyc,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BplusTree.pyc
+Binary files /tmp/cvsJBCkCW and BplusTree.pyc differ
+Index: BplusPy/BplusTreeBytes.pyc
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/BplusPy/BplusTreeBytes.pyc,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BplusTreeBytes.pyc
+Binary files /tmp/cvssH7UEe and BplusTreeBytes.pyc differ
+Index: BplusPy/BplusTreeLong.pyc
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/BplusPy/BplusTreeLong.pyc,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BplusTreeLong.pyc
+Binary files /tmp/cvsbmZZHw and BplusTreeLong.pyc differ
+Index: BplusPy/BufferFile.pyc
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/BplusPy/BufferFile.pyc,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BufferFile.pyc
+Binary files /tmp/cvsv3kjLO and BufferFile.pyc differ
+Index: BplusPy/LinkedFile.pyc
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/BplusPy/LinkedFile.pyc,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 LinkedFile.pyc
+Binary files /tmp/cvsDjPUO6 and LinkedFile.pyc differ
+Index: BplusPy/hBplusTree.pyc
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/BplusPy/hBplusTree.pyc,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 hBplusTree.pyc
+Binary files /tmp/cvswMdPSo and hBplusTree.pyc differ
+Index: BplusPy/hBplusTreeBytes.py
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/BplusPy/hBplusTreeBytes.py,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 hBplusTreeBytes.py
+24,45c24,38
+<         resultbytes = list(range(maxbytecount))
+<         i = 0
+<         invert = False
+<         for inputchar in s:
+<             inputbyte = ord(inputchar)
+<             outputindex = i % maxbytecount
+<             outputbyte = resultbytes[outputindex]
+<             rotator = (i/maxbytecount) % 8
+<             if (rotator):
+<                 hipart = inputbyte<<rotator
+<                 lowpart = inputbyte>>(8-rotator)
+<                 inputbyte = hipart | lowpart
+<             outputbyte = (inputbyte ^ outputbyte) % 127
+<             if inputbyte&128:
+<                 invert = not invert
+<             if invert:
+<                 outputbyte = (outputbyte^127) % 128
+<             resultbytes[outputindex] = outputbyte
+<             i+=1
+<         resultchrs = map(chr, resultbytes)
+<         resultbytes = string.join(resultchrs, "")
+<         (result, dummy) = ENCODER(resultbytes)
+---
+>         import md5
+>         if type(s) is types.UnicodeType:
+>             (s, dummy) = ENCODER(s)
+>         d = md5.new(s).digest()
+>         #result = d[:maxbytecount]
+>         resultL = []
+>         ld = len(d)
+>         for x in xrange(maxbytecount):
+>             b = ord(d[x%ld])
+>             #b = b % 127
+>             if b>127:
+>                 b = 256-b
+>             b = b%79 + 40
+>             resultL.append( chr(b) )
+>         result = "".join(resultL)
+46a40,74
+> ##    def PrefixForByteCount(this, s, maxbytecount):
+> ##        if type(s) is types.UnicodeType:
+> ##            (s, dummy) = ENCODER(s)
+> ##        print; print; print "prefixing", s, repr(s), maxbytecount
+> ##        resultbytes = list(range(maxbytecount))
+> ##        i = 0
+> ##        invert = False
+> ##        for inputchar in s:
+> ##            inputbyte = ord(inputchar)
+> ##            print "inputbyte", inputbyte
+> ##            outputindex = i % maxbytecount
+> ##            outputbyte = resultbytes[outputindex]
+> ##            print "outputbyte", outputbyte
+> ##            rotator = (i/maxbytecount) % 8
+> ##            if (rotator):
+> ##                hipart = inputbyte<<rotator
+> ##                lowpart = inputbyte>>(8-rotator)
+> ##                inputbyte = hipart | lowpart
+> ##                print "hipart, lowpart, inputbyte", inputbyte
+> ##            outputbyte = (inputbyte ^ outputbyte) % 127
+> ##            print "uninverted outputbyte", outputbyte
+> ##            if inputbyte&128:
+> ##                invert = not invert
+> ##            if invert:
+> ##                outputbyte = (outputbyte^127) % 128
+> ##                print "inverted outputbyte", outputbyte
+> ##            print "outputbyte", outputbyte
+> ##            resultbytes[outputindex] = outputbyte
+> ##            i+=1
+> ##        print "resultbytes", resultbytes
+> ##        resultchrs = map(chr, resultbytes)
+> ##        resultbytes = string.join(resultchrs, "")
+> ##        (result, dummy) = ENCODER(resultbytes)
+> ##        print "result", repr(result)
+> ##        return result
+48c76
+<     
+\ No newline at end of file
+---
+>     
+Index: BplusPy/hBplusTreeBytes.pyc
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/BplusPy/hBplusTreeBytes.pyc,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 hBplusTreeBytes.pyc
+Binary files /tmp/cvshiJ41Y and hBplusTreeBytes.pyc differ
+Index: BplusPy/xBplusTree.pyc
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/BplusPy/xBplusTree.pyc,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 xBplusTree.pyc
+Binary files /tmp/cvsmAJM7g and xBplusTree.pyc differ
+Index: BplusPy/xBplusTreeBytes.pyc
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/BplusPy/xBplusTreeBytes.pyc,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 xBplusTreeBytes.pyc
+Binary files /tmp/cvsAsGMdz and xBplusTreeBytes.pyc differ
+Index: NET/sourceforge/BplusJ/BplusJ/BplusTree.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/BplusTree.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BplusTree.class
+Binary files /tmp/cvsNcVnoR and BplusTree.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/BplusTreeBadKeyValue.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/BplusTreeBadKeyValue.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BplusTreeBadKeyValue.class
+Binary files /tmp/cvsNV2dz9 and BplusTreeBadKeyValue.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/BplusTreeBytes.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/BplusTreeBytes.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BplusTreeBytes.class
+Binary files /tmp/cvsrrMiKr and BplusTreeBytes.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/BplusTreeException.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/BplusTreeException.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BplusTreeException.class
+Binary files /tmp/cvspkaxVJ and BplusTreeException.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/BplusTreeKeyMissing.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/BplusTreeKeyMissing.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BplusTreeKeyMissing.class
+Binary files /tmp/cvsPrnS61 and BplusTreeKeyMissing.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/BplusTreeLong$BplusNode$Delete.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/BplusTreeLong$BplusNode$Delete.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BplusTreeLong$BplusNode$Delete.class
+Binary files /tmp/cvsT8Ckik and BplusTreeLong$BplusNode$Delete.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/BplusTreeLong$BplusNode$FindAtOrNextPositionInLeaf.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/BplusTreeLong$BplusNode$FindAtOrNextPositionInLeaf.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BplusTreeLong$BplusNode$FindAtOrNextPositionInLeaf.class
+Binary files /tmp/cvsteQRtC and BplusTreeLong$BplusNode$FindAtOrNextPositionInLeaf.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/BplusTreeLong$BplusNode$TraverseToFollowingKey.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/BplusTreeLong$BplusNode$TraverseToFollowingKey.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BplusTreeLong$BplusNode$TraverseToFollowingKey.class
+Binary files /tmp/cvsILRuFU and BplusTreeLong$BplusNode$TraverseToFollowingKey.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/BplusTreeLong$BplusNode.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/BplusTreeLong$BplusNode.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BplusTreeLong$BplusNode.class
+Binary files /tmp/cvsYZucRc and BplusTreeLong$BplusNode.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/BplusTreeLong.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/BplusTreeLong.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BplusTreeLong.class
+Binary files /tmp/cvsZiyY2u and BplusTreeLong.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/BufferFile.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/BufferFile.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BufferFile.class
+Binary files /tmp/cvseefbfN and BufferFile.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/BufferFileException.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/BufferFileException.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 BufferFileException.class
+Binary files /tmp/cvsKjRwr5 and BufferFileException.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/IByteTree.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/IByteTree.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 IByteTree.class
+Binary files /tmp/cvsRU3YDn and IByteTree.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/IStringTree.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/IStringTree.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 IStringTree.class
+Binary files /tmp/cvsyNGxQF and IStringTree.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/ITreeIndex.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/ITreeIndex.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 ITreeIndex.class
+Binary files /tmp/cvsYq3c3X and ITreeIndex.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/LinkedFile$ParseBuffer.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/LinkedFile$ParseBuffer.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 LinkedFile$ParseBuffer.class
+Binary files /tmp/cvsj85Zfg and LinkedFile$ParseBuffer.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/LinkedFile.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/LinkedFile.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 LinkedFile.class
+Binary files /tmp/cvsVJ7Rsy and LinkedFile.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/LinkedFileException.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/LinkedFileException.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 LinkedFileException.class
+Binary files /tmp/cvsP6gVFQ and LinkedFileException.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/hBplusTree.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/hBplusTree.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 hBplusTree.class
+Binary files /tmp/cvs7jC5S8 and hBplusTree.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/hBplusTreeBytes.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/hBplusTreeBytes.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 hBplusTreeBytes.class
+Binary files /tmp/cvs3FPn6q and hBplusTreeBytes.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/hBplusTreeBytes.java
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/hBplusTreeBytes.java,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 hBplusTreeBytes.java
+82,83d81
+< 			// compute a hash code as a String which has maxbytecount size as a byte sequence
+< 			byte[] resultbytes = new byte[maxbytecount];
+85,111c83,89
+< 			int sevenbits = 127;
+< 			int eighthbit = 128;
+< 			boolean invert = false;
+< 			for (int i=0; i<maxbytecount; i++) 
+< 			{
+< 				resultbytes[i] = (byte) (i & sevenbits);
+< 			}
+< 			for (int i=0; i<inputbytes.length; i++) 
+< 			{
+< 				int inputbyte = inputbytes[i];
+< 				int outputindex = i % maxbytecount;
+< 				int outputbyte = resultbytes[outputindex];
+< 				int rotator = (i/maxbytecount) % 8;
+< 				if (rotator!=0) 
+< 				{
+< 					int hipart = inputbyte << rotator;
+< 					int lowpart = inputbyte >> (8-rotator);
+< 					inputbyte = (hipart | lowpart);
+< 				}
+< 				outputbyte = ((inputbyte ^ outputbyte) % sevenbits);
+< 				if ( (inputbyte&eighthbit)!=0 ) 
+< 				{
+< 					invert = !invert;
+< 				}
+< 				if (invert) 
+< 				{
+< 					outputbyte = (outputbyte ^ sevenbits) % eighthbit;
+---
+> 			java.security.MessageDigest D = java.security.MessageDigest.getInstance("MD5");	
+> 			byte[] digest = D.digest(inputbytes);
+> 			byte[] resultbytes = new byte[maxbytecount];
+> 			for (int i=0; i<maxbytecount; i++) {
+> 				int r = digest[ i % digest.length ];
+> 				if (r<0) {
+> 					r = -r;
+113c91,92
+< 				resultbytes[outputindex] = (byte) outputbyte;
+---
+> 				r = r%79 + 40; // printable ascii
+> 				resultbytes[i] = (byte)r;
+116,119d94
+< 			if (result.length()!=maxbytecount) 
+< 			{
+< 				throw new BplusTreeException("bad hash value generated with length: "+result.length()+" not "+maxbytecount);
+< 			}
+121a97,148
+> 
+> //		public String PrefixForByteCount(String s, int maxbytecount) throws Exception OLD VERSION
+> //		{
+> //			// compute a hash code as a String which has maxbytecount size as a byte sequence
+> //			byte[] resultbytes = new byte[maxbytecount];
+> //			byte[] inputbytes = BplusTree.StringToBytes(s);
+> //			int sevenbits = 127;
+> //			int eighthbit = 128;
+> //			boolean invert = false;
+> //			for (int i=0; i<maxbytecount; i++) 
+> //			{
+> //				resultbytes[i] = (byte) (i & sevenbits);
+> //			}
+> //			System.out.println("\n\n\n prefixing "+s+" "+maxbytecount);
+> //			for (int i=0; i<inputbytes.length; i++) 
+> //			{
+> //				int inputbyte = (inputbytes[i]+256)%256;
+> //				System.out.println("inputbyte = "+inputbyte);
+> //				int outputindex = i % maxbytecount;
+> //				int outputbyte = (resultbytes[outputindex]+256)%256;
+> //				System.out.println("outputbyte = "+outputbyte);
+> //				int rotator = (i/maxbytecount) % 8;
+> //				if (rotator!=0) 
+> //				{
+> //					int hipart = inputbyte << rotator;
+> //					System.out.println("hipart = "+hipart);
+> //					int lowpart = inputbyte >> (8-rotator);
+> //					System.out.println("lowpart = "+lowpart);
+> //					inputbyte = (hipart | lowpart);
+> //					System.out.println("new inputbyte = "+inputbyte);
+> //				}
+> //				outputbyte = (((inputbyte ^ outputbyte)) % sevenbits);
+> //				System.out.println("uninverted outputbyte = "+outputbyte);
+> //				if ( (inputbyte&eighthbit)!=0 ) 
+> //				{
+> //					invert = !invert;
+> //				}
+> //				if (invert) 
+> //				{
+> //					outputbyte = ((outputbyte ^ sevenbits)&sevenbits) % eighthbit;
+> //					System.out.println("inverted outputbyte = "+outputbyte);
+> //				}
+> //				resultbytes[outputindex] = (byte) outputbyte;
+> //				System.out.println("result "+outputindex+" = "+resultbytes[outputindex]);
+> //			}
+> //			String result = BplusTree.BytesToString(resultbytes);
+> //			if (result.length()!=maxbytecount) 
+> //			{
+> //				throw new BplusTreeException("bad hash value generated with length: "+result.length()+" not "+maxbytecount);
+> //			}
+> //			return result;
+> //		}
+Index: NET/sourceforge/BplusJ/BplusJ/xBplusTree.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/xBplusTree.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 xBplusTree.class
+Binary files /tmp/cvsOsIox1 and xBplusTree.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/xBplusTreeBytes$xBucket.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/xBplusTreeBytes$xBucket.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 xBplusTreeBytes$xBucket.class
+Binary files /tmp/cvszwm8Kj and xBplusTreeBytes$xBucket.class differ
+Index: NET/sourceforge/BplusJ/BplusJ/xBplusTreeBytes.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/BplusJ/xBplusTreeBytes.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 xBplusTreeBytes.class
+Binary files /tmp/cvsDgrXYB and xBplusTreeBytes.class differ
+Index: NET/sourceforge/BplusJ/testing/bplusTest.class
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/testing/bplusTest.class,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 bplusTest.class
+Binary files /tmp/cvsnndweU and bplusTest.class differ
+Index: NET/sourceforge/BplusJ/testing/bplusTest.java
+===================================================================
+RCS file: /cvsroot/bplusdotnet/bplusdotnet/NET/sourceforge/BplusJ/testing/bplusTest.java,v
+retrieving revision 1.1.1.1
+diff -r1.1.1.1 bplusTest.java
+14c14
+< 		static String tempdirectory = null; //"c:\\tmp"; // set to a directory to test storing to/from files
+---
+> 		static String tempdirectory = "c:\\tmp"; // set to a directory to test storing to/from files

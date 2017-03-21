@@ -1,0 +1,72 @@
+FAQ and INFO
+Larry A. Walker & Co. 
+B+Tree Index Source
+
+:::::What is this product?
+
+This product is C language source code for a library of 
+B+Tree functions.  You integrate the functions into your program.  It
+is intended for use by software engineers who are building systems
+requiring a robust indexing system.
+
+Distributed with the B+Tree :
+A tree debugger and various list and test programs.
+A set of double link list functions which are not required
+in the B+Tree.  
+
+In order to use this product you would need to know the C
+programming language, have a working knowledge of makefiles and such, 
+and understand the general concept of a B+Tree index system.  
+
+This product is the C version of an earlier product,  "B+Tree in C++"
+This product is released in Dec 2002 under the GNU Public License.
+See license agreement.
+
+The product is downloaded as a Unix tar file; gzip compressed, or
+not compressed.
+
+The product has been built for a number of Unix OS.  An earlier version
+had also run on MSDOS.  The freeware version was developed on Linux and 
+SunOS 5.8.
+It should build and run without change on any Posix compliant platform, and
+others with minor modification.
+
+This product is used wherever an index is required.  You would 
+not use this system to support a small index, but you might use 
+the index to support very large indexing requirements. For example, 
+the commercial version of this index was used in optical file systems.
+
+Unlike other B+Trees hou could use it with any kind of key, even variable 
+length keys.  It has its own debugging system, useful for your development. It 
+has numerous other features not available elsewhere.  It is faster than
+other indexing systems, and magnitudes faster than the most expensive DBMS.
+
+:::::Disclaimer:
+
+The Larry A. Walker & Co. B+Tree software, utilities and manual
+is provided "as is" and is without express, limited or implied 
+warranty of any kind by either Larry A. Walker & Co. or anyone who has 
+been involved in the creation, production, or distribution of the
+software, including, but not limited to the implied warranties of
+merchantability and fitness for a particular purpose.  The entire
+risk as the quality and performance of the software and user
+manual is with you.  Should the software and user manual prove
+defective, you assume the entire cost of all necessary servicing,
+repair or correction.  Use of the software constitutes agreement
+to these provisions.  
+
+This software is not intended to work as is with any commercial version of
+this indexing system.
+
+:::::Test programs and btdebug:
+
+The program btdebug is provided as both an example and an interface
+to access and manipulate existing trees.
+
+The program gen will create an example index.
+
+The program ungen will delete from a gen index.
+
+The program list will list the keys in a tree.
+
+The program idxdump will dump the index nodes.

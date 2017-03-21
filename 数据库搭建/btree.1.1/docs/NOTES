@@ -1,0 +1,34 @@
+
+
+SOME THINGS TO DO:
+
+complete all function headers to standard format
+
+fix bug:
+let me add a long key into an exhaused varable length tree
+
+although supports user defined data vs long address - doesn't print it
+
+need to test install compare routine better
+
+fix bug:
+in btdebug add a new fix len key added a blank when no dups and was trying
+  to enter a dup
+
+fix bug:
+no dups, on first key can enter dup
+
+fix bug:
+in btdebug it let me exhaust the tree, at a key, but not then see the key
+  even though the key was there when closed
+
+create a c++ wrapper front end that looks like the original c++
+class
+
+Windows NT/XP port
+
+Shared library
+
+update makefiles to configure/makedepend
+
+
