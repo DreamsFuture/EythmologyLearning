@@ -3,7 +3,7 @@ import socket
 import urllib3
 import time
 import re
-
+import GlobalVariable
 class RootWordHtmlParser:
     def __init__(self):
         self.http = urllib3.PoolManager()
@@ -12,12 +12,15 @@ class RootWordHtmlParser:
         
         word = re.sub(r'\ ', '', word)
         word  = word.rstrip('\n') 
+        GlobalVariable.rootWord[1] = word
+        print("GlobalVariable.rootWord[1]:  "+ word)
         
         webSite = ''.join([r'http://www.etymonline.com/index.php?term=', word, r'&allowed_in_frame=0'])        
         phoneticwebsite = ''.join([r'http://dict.cn/', word])        
         levelwebsite = ''.join([r'http://www.iciba.com/',word])
         loopNum = 0
-        
+        print("------------------   sucessful goes into the html parser---------------------------")
+        #-----------------------------------------------------------------------------------------------------------------------------------------
         try:
             #html = urllib3.urlopen(webSite, timeout=15).read()
             sourceWordHtml = self.http.request('GET', webSite, timeout=15)
@@ -83,22 +86,26 @@ class RootWordHtmlParser:
                 pass
             time.sleep(0.5)
             print ( sourceWordHtml.data)
-        
+        #----------------------------------------------------------------------------------------------------------------------
         time.sleep(0.3)
-        soup = BeautifulSoup(sourceWordHtml.data, "sourceWordHtml.parser")      
-        soup2 = BeautifulSoup(phoneticHtml.data, "phoneticHtml.parser")        
-        soup3 =  BeautifulSoup(levelHtml.data, "levelHtml.parser")
+        soup = BeautifulSoup(sourceWordHtml.data, "html.parser")
+        soup2 = BeautifulSoup(phoneticHtml.data, "html.parser")
+        soup3 =  BeautifulSoup(levelHtml.data, "html.parser")
+        
+        
         
         fullResult = soup.find('div', attrs={'id':'dictionary'})
-        
-        if re.match('.*PIE.*', fullResult.get_text()):
-            import GlobalVariable
+        #print(fullResult.get_text())
+        #print(word)
+        if 'PIE' not in  fullResult.get_text():
             
-            GlobalVariable.rootWord[1] = word
-        
+            print(fullResult.get_text())
+            print("word:"+word)
+            
             for lineText in fullResult.get_text().split("\n"):
                 wordTest = re.sub(r'\(.*', '', lineText)
                 wordTest = re.sub('\ ', '', wordTest)
+                
                 if (word == str(wordTest)):
 
                     lineText = lineText[lineText.find("(")-1:lineText.find(")")+1]
@@ -112,8 +119,11 @@ class RootWordHtmlParser:
                     firstColon = lineText.find('\"', PIENum, END)
                     secondColon = lineText.find('\"', firstColon, END)
                     PIEWord = lineText[lineText.find("PIE"):lineText.find("(", secondColon,END)]
+                    
                     GlobalVariable.rootWord[7] = PIEWord
                     GlobalVariable.rootWord[9] = lineText
+                    print("PIEWord:"+PIEWord)
+                    print(lineText)
                 else:
                     pass
             
@@ -130,7 +140,9 @@ class RootWordHtmlParser:
                     result_sub = re.sub(r'\\','',result_sub)
                     #print (result_sub, result2_sub)
                     GlobalVariable.rootWord[4] = result2_sub
+                    print(result2_sub)
                     GlobalVariable.rootWord[5] = result_sub
+                    print(result_sub)
                     
                 else:
                     pass
@@ -146,6 +158,7 @@ class RootWordHtmlParser:
                 levelresult = re.sub(r'\ ', '', levelresult)
                 levelresult = re.sub(r'\n', '', levelresult)
                 GlobalVariable.rootWord[3] = levelresult
+                print(levelresult)
             else:
                 result = ' '
             print (result) 

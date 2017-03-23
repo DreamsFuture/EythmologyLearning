@@ -3,21 +3,20 @@
 
 
 
-def init():
     
     
     
-    global rootWord 
-    rootWord = []
+global rootWord 
+rootWord = []
     
-    for i in range(0, 14):
-        rootWord.append('')
-    
-    
+for i in range(0, 14):
+    rootWord.append('')
     
     
     
-    global eventHappen
-    eventHappen = False
+    
+    
+global eventHappen
+eventHappen = False
     
     

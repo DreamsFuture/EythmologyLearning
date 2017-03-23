@@ -38,12 +38,18 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     @pyqtSignature("")
     def on_RootWord_clicked(self):
         
-        
+        """
         rootWordThread = RootWordThread()
         rootWordThread.start()
+        """
+        rootWordGenerated = RootWordGenerated()
         
-
-        
+            
+        start_time = time.time()
+        print("the Execution Time11:%s seconds " % (time.time() - start_time))
+        quitRootWordThread = rootWordGenerated.RootWordGenerated()
+            
+        print("the Execution Time22:%s seconds " % (time.time() - start_time))
         
         
         
@@ -152,16 +158,16 @@ class RootWordThread(Thread):
     def __init__(self):
         Thread.daemon = False
         Thread.__init__(self) 
-        
+        self.quitRootWordThread = False
         
     def run(self):
         #ImportError: cannot import name 'RootWordGenerated'
-        
-        while(True):
-            rootWordGenerated = RootWordGenerated()
+        rootWordGenerated = RootWordGenerated()
+        while(not self.quitRootWordThread):
+            
             start_time = time.time()
             print("the Execution Time11:%s seconds " % (time.time() - start_time))
-            rootWordGenerated.RootWordGenerated()
+            self.quitRootWordThread = rootWordGenerated.RootWordGenerated()
             
             print("the Execution Time22:%s seconds " % (time.time() - start_time))
 
