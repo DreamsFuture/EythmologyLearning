@@ -16,9 +16,8 @@ class RootWordGenerated:
   
     def RootWordGenerated(self):
         rootWordHtmlParser = RootWordHtmlParser()
-        
-        
-        conn = sqlite3.connect('EythmologyRootWord.db')
+        conn = sqlite3.connect(":memory:")
+        #conn = sqlite3.connect('EythmologyRootWord.db')
         #conn.execute('DROP TABLE EythmologyRootWord')
         conn.execute('''create table if not exists  EythmologyRootWord
             (ID                             INT PRIMARY KEY     NOT NULL,
@@ -73,7 +72,7 @@ class RootWordGenerated:
                         if self.ID%10 == 0:
                             conn.commit()
                         for i in range(0, 14):
-                            print(GlobalVariable.rootWord[i])
+                            print("GlobalVariable.rootWord : "+ GlobalVariable.rootWord[i])
                             GlobalVariable.rootWord.append('')
                     else:
                         continue

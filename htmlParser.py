@@ -38,9 +38,15 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     @pyqtSignature("")
     def on_RootWord_clicked(self):
         
-        """
+        
+        start_time = time.time()
+        print("the Execution Time11:%s seconds " % (time.time() - start_time))
         rootWordThread = RootWordThread()
         rootWordThread.start()
+        print("the Execution Time22:%s seconds " % (time.time() - start_time))
+        
+        
+        
         """
         rootWordGenerated = RootWordGenerated()
         
@@ -51,7 +57,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             
         print("the Execution Time22:%s seconds " % (time.time() - start_time))
         
-        
+        """
         
         
         

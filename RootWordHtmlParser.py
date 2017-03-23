@@ -97,9 +97,9 @@ class RootWordHtmlParser:
         fullResult = soup.find('div', attrs={'id':'dictionary'})
         #print(fullResult.get_text())
         #print(word)
-        if 'PIE' not in  fullResult.get_text():
+        if 'PIE' in fullResult.get_text():
             
-            print(fullResult.get_text())
+            #print(fullResult.get_text())
             print("word:"+word)
             
             for lineText in fullResult.get_text().split("\n"):
@@ -112,8 +112,8 @@ class RootWordHtmlParser:
                     #lineText = re.findall('\(.*?\)',lineText)
                     GlobalVariable.rootWord[2] = lineText
                 elif(re.match('.*PIE.*', lineText)):
-                    print(lineText.find("PIE"))
-                    print(lineText.find("("))
+                    #print(lineText.find("PIE"))
+                    #print(lineText.find("("))
                     PIENum = lineText.find("PIE")
                     END = len(lineText)
                     firstColon = lineText.find('\"', PIENum, END)
@@ -123,7 +123,7 @@ class RootWordHtmlParser:
                     GlobalVariable.rootWord[7] = PIEWord
                     GlobalVariable.rootWord[9] = lineText
                     print("PIEWord:"+PIEWord)
-                    print(lineText)
+                    #print(lineText)
                 else:
                     pass
             
@@ -140,9 +140,9 @@ class RootWordHtmlParser:
                     result_sub = re.sub(r'\\','',result_sub)
                     #print (result_sub, result2_sub)
                     GlobalVariable.rootWord[4] = result2_sub
-                    print(result2_sub)
+                    #print(result2_sub)
                     GlobalVariable.rootWord[5] = result_sub
-                    print(result_sub)
+                    #print(result_sub)
                     
                 else:
                     pass
@@ -158,10 +158,10 @@ class RootWordHtmlParser:
                 levelresult = re.sub(r'\ ', '', levelresult)
                 levelresult = re.sub(r'\n', '', levelresult)
                 GlobalVariable.rootWord[3] = levelresult
-                print(levelresult)
+                #print(levelresult)
             else:
                 result = ' '
-            print (result) 
+            #print (result) 
             return True
         else:
             return False        
