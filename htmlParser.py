@@ -187,7 +187,7 @@ class DisplayInfoThread(Thread):
        
         while True:
             try:  
-                string=self._queue.get(block=True, timeout=20)#接收消息  
+                self._queue.get(block=True, timeout=20)#接收消息  
                 #self.Window.View_Text.setText(string)
             except queue.Empty: 
                 print("Nothing to do!i will go home!")  
