@@ -18,4 +18,4 @@ setup(  name = "Eytmology",
         version = "0.1",
         description = "Eytmology Dictionary!",
         options = {"build_exe": build_exe_options},
-        executables = [Executable("__init__.py", base=base)])
+        executables = [Executable("htmlParser.py", base=base)])

@@ -38,9 +38,8 @@ class RootWordHtmlParser:
         
         except urllib3.exceptions.HTTPError:
             print ("catch a exceptions : urllib3.exceptions.HTTPError")
-            if sourceWordHtml.data == '' or sourceWordHtml.data == ' *' or \
-                        phoneticHtml.data == ''or phoneticHtml.data == ' *':
-                        return False  
+            
+            return False  
             """
             loopNum = 0
             while sourceWordHtml.data == '' or sourceWordHtml.data == ' *' or \
@@ -65,30 +64,11 @@ class RootWordHtmlParser:
                     
         except urllib3.exceptions.ReadTimeoutError:
             print ("catch a exceptions    :urllib3.exceptions.ReadTimeoutError")
-            loopNum = 0
-            
-            while sourceWordHtml.data == '' or sourceWordHtml.data == ' *' or \
-                        phoneticHtml.data == ''or phoneticHtml.data == ' *':
-                try:
-                
-                    sourceWordHtml = self.http.request('GET', webSite, timeout=5)
-                    phoneticHtml = self.http.request('GET', phoneticwebsite, timeout = 5)
-                    levelHtml = self.http.request('GET', levelwebsite, timeout = 15)
-                except urllib3.exceptions.HTTPError:
-                    pass
-                except socket.timeout:
-                    pass
-                except socket.error:
-                    pass
-                time.sleep(0.5)
-                
-                loopNum = loopNum + 1
-                if loopNum == 5 :
-                    break
+            return False
             
         except urllib3.exceptions.MaxRetryError:
             print("catch a exceptions : urllib3.exceptions.MaxRetryError")
-            
+            return False
             #print ( sourceWordHtml.data)
             
           

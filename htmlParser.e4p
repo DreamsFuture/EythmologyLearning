@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
 <!-- eric project file for project htmlParser -->
-<!-- Saved: 2017-03-19, 22:58:56 -->
+<!-- Saved: 2017-03-25, 11:05:14 -->
 <!-- Copyright (C) 2017 ,  -->
 <Project version="5.1">
   <Language>en_US</Language>
@@ -23,6 +23,7 @@
     <Source>__init__.py</Source>
     <Source>htmlDataAcquired.py</Source>
     <Source>htmlParser.py</Source>
+    <Source>py2exe.py</Source>
   </Sources>
   <Forms>
     <Form>htmlParser.ui</Form>
