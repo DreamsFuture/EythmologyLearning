@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-import socket
+
 import urllib3
 import time
 import re
@@ -23,7 +23,7 @@ class RootWordHtmlParser:
         
         phoneticwebsite = ''.join([r'http://dict.cn/', word])        
         levelwebsite = ''.join([r'http://www.iciba.com/',word])
-        loopNum = 0
+        
         
         
         

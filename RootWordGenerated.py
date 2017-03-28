@@ -49,12 +49,6 @@ class RootWordGenerated:
                 for line in fin:
                     line = line.rstrip('\n')
                     
-                    """
-                    if  re.match('n..*', line) or re.match('adj..*', line) or  re.match('adv..*', line) or  re.match('prep..*', line)\
-                             or re.match('v..*', line) or  re.match('conj..*', line):
-                        continue
-                    """
-                    
                     isAsciiString = all(ord(char) < 128 for char in str(line))
                     #print("line: ----    "+line+"   is   "+str(isAsciiString))
                     if isAsciiString:
