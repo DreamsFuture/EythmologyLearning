@@ -1,0 +1,2 @@
+读取gre_word.txt文件中的单词，然后把其中的单词与http://www.etymonline.com/组合成url，并从此网站中获取单词的词源信息，整个项目应用Python以及扩展
+包获取自己需要的信息，然后保存到.db数据库中；
